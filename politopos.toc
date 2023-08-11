@@ -9,8 +9,7 @@
 \contentsline {section}{\numberline {3}Quiralitos estrellados}{7}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Del convexo al estrellado}{8}{subsection.3.1}%
 \contentsline {paragraph}{La búsqueda por la bandera}{9}{paragraph*.5}%
-\contentsline {paragraph}{La idea de Roli}{9}{paragraph*.6}%
-\contentsline {section}{\numberline {4}En busca de otros poliedros quirales}{9}{section.4}%
-\contentsline {subsection}{\numberline {4.1}Definiciones y resultados}{9}{subsection.4.1}%
-\contentsline {paragraph}{¿Cómo podemos estar seguros de que esta construcción nos da un poliedro?}{11}{paragraph*.7}%
-\contentsline {subsection}{\numberline {4.2}Looking for chiral polyhedra}{11}{subsection.4.2}%
+\contentsline {section}{\numberline {4}En busca de otros poliedros quirales}{11}{section.4}%
+\contentsline {subsection}{\numberline {4.1}Definiciones y resultados}{11}{subsection.4.1}%
+\contentsline {paragraph}{¿Cómo podemos estar seguros de que esta construcción nos da un poliedro?}{12}{paragraph*.8}%
+\contentsline {subsection}{\numberline {4.2}Looking for chiral polyhedra}{12}{subsection.4.2}%

@@ -15,6 +15,7 @@
 \usepackage[left=4cm, right=4cm]{geometry}
 \usepackage{palatino}%Font
 \usepackage{graphicx}
+\usepackage{wrapfig}
 \usepackage{float}
 \usepackage{subcaption}
 \usepackage{enumitem}
@@ -49,6 +50,7 @@
 \newtheorem*{teo}{Teorema}
 \newtheorem*{prop}{Proposición}
 \newtheorem*{coro}{Corolario}
+\newtheorem*{af}{Afirmación}
 \newtheorem*{ejer}{Ejercicio}
 \newtheorem*{ejem}{Ejemplo}
 \newtheorem*{pregunta}{Pregunta}
@@ -490,7 +492,7 @@ A continuación desglosaremos este proceso.
 \subsection{La construcción de Petrie-Coxeter}
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.45\linewidth]{politopos2}
+	\includegraphics[width=0.45\linewidth]{p2}
 	\caption*{La construcción de Petrie-Coxeter y los valores de $\alpha$.}
 \end{figure}
 Dado un 4-politopo regular $\T$, mostraremos cómo constuir un poliedro regular o quiral $PC(\T)$. Suponemos por el resto del texto que $\T$ tiene caras planas.
@@ -503,7 +505,7 @@ Las caras son los cuadrados $(v,c)_\alpha$, $(v',c)_\alpha$, $(v,c')_\alpha$ y $
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\linewidth]{politopos3}
+	\includegraphics[width=0.5\linewidth]{p3}
 \end{figure}
 Tenemos algunos resultados sobre esta construcción:
 \begin{teo}
@@ -568,7 +570,7 @@ Dados un vértice, arista y 2-hoyo incidentes, se va construyendo $\p^\phi$ por 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[width=0.5\linewidth]{politopos4}
+	\includegraphics[width=0.5\linewidth]{p4}
 	\caption*{Construcción de un 2-hoyo}
 \end{figure}
 
@@ -656,7 +658,7 @@ En nuestro caso, partimos de que el grupo de la 120-celda, [5,3,3], está genera
 Comenzemos en dimensión 3, intentando expresar el [5/3,3] a partir del grupo del dodecaedro. Después de muchos intentos logramos esto:
 
 \begin{center}
-	\includegraphics[width=0.9\linewidth]{politopos1}
+	\includegraphics[width=0.9\linewidth]{p1}
 \end{center}
 Es decir:
 \[T_0=R_2,\qquad T_2=R_0,\qquad T_1=(R_0R_1)^2R_2(R_0R_1)^{-2}\]
@@ -675,7 +677,7 @@ Así que a la mera hora:
 	T_3=\left((R_1R_2)R_3(R_1R_2)^{-1})(R_0)\right)&((R_1R_2)R_3(R_1R_2)^{-1})\left((R_1R_2)R_3(R_1R_2)^{-1})(R_0)\right)^{-1}
 \end{align*}
 Antes de pasar a estudiar las $T_i$, hicimos esta cuenta con las $P_i$. Tenemos las presentaciones de los grupos:
-\begin{align*}
+\label{rels}\begin{align*}
 	[3,3,5]=\langle R_i|R_i^2=(R_0R_1)^3=(R_1R_2)^3=(R_2R_3)^5=1\\
 	(R_0R_2)^2=(R_0R_3)^2=(R_1R_3)^2=1\rangle\\ \\
 	[5,3,5/2]=\langle P_i|P_i^2=(P_0P_1)^5=(P_1P_2)^3=(P_2P_3)^5=1\\
@@ -685,7 +687,83 @@ Así que hay que checar que las $P_i$ satisfagan eso. \textbf{Se comprobaron tod
 
 \paragraph{La búsqueda por la bandera} Se logró identificar cómo está situada la bandera del \{5,3,5/2\} con respecto a la bandera del \{3,3,5\}.
 
-\paragraph{La idea de Roli} es pensar que el icosaedrito de los no-vértices del \{5/2,3\} es la figura de vértice del \{3,3,5\}. Podemos tomar un tetraedro de los 20 que conforman ese icosaedrito, y dentro de él una bandera básica que genere al \{3,3,5\}.  Entonces, $R_0$ bisecta una de las aristas del \{5/2,3\}, así que podemos escoger esa arista para formar una bandera del \{5/2,3,5\} y tenemos que $R_0=P_0$.
+\begin{af}[La idea de Roli] Pensemos que el icosaedrito de los no-vértices del \{5/2,3\} es la figura de vértice del \{3,3,5\}. Al hacer actuar las isometrías $R_i$ sobre el \{5/2,3\} obtenemos el \{5/2,3,5\}
+\end{af}
+\begin{proof}
+	Definamos 
+		\[P_0=R_0,\qquad P_2=R_3,\qquad P_3=R_2\]
+	Para $P_1$ hay que hacer un poquito más de chamba. Apliquemos primero la rotación en la arista base "hacia nosotros", $R_3R_2$, dos veces:
+	\begin{figure}[H]
+	\begin{subfigure}{0.4\linewidth}
+		\centering
+		\includegraphics[width=0.6\linewidth]{p5}
+	\end{subfigure}
+	\begin{tikzpicture}
+		\draw[->,very thick] (0,0)--(1,0) node[midway, above] {$Q^2=(R_3R_2)^2$};;
+		\filldraw[white] (0,-2) circle (0.05);
+	\end{tikzpicture}
+	\begin{subfigure}{0.5\linewidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{p6}
+	\end{subfigure}
+	\end{figure}
+	Ahora rotemos respecto a la recta amarillo-verde en dirección horaria (vista desde arriba), $R_0R_1$:
+	\begin{figure}[H]
+	\begin{subfigure}{0.4\linewidth}
+		\centering
+		\includegraphics[width=0.6\linewidth]{p5}
+	\end{subfigure}
+	\begin{tikzpicture}
+		\draw[->,very thick] (0,0)--(1,0) node[midway, above] {$R_1R_0Q^2R_0R_1$};;
+		\filldraw[white] (0,-2) circle (0.05);
+	\end{tikzpicture}
+	\begin{subfigure}{0.4\linewidth}
+		\centering
+		\includegraphics[width=0.9\linewidth]{p7}
+	\end{subfigure}
+\end{figure}
+	Hemos destacado a dónde van a dar los puntos azul, amarillo y verde, que corresponden al plano de reflexión de $R_0$. Definamos 
+	\begin{align*}
+		P_1&=(R_1R_0Q^2R_0R_1)^{-1}R_0(R_1R_0Q^2R_0R_1)\\
+		&=(R_1R_0(R_3R_2)^2R_0R_1)^{-1}R_0(R_1R_0(R_3R_2)^2R_0R_1)\\
+		&=(R_1R_0R_3R_2R_3R_2R_0R_1)^{-1}R_0(R_1R_0R_3R_2R_3R_2R_0R_1)\\
+		&=R_1R_0R_2R_3R_2R_3R_0R_1R_0R_1R_0R_3R_2R_3R_2R_0R_1\\
+		&=R_1R_0R_2R_3R_2R_3R_1R_0R_1R_1R_0R_3R_2R_3R_2R_0R_1\\	&=R_1R_0R_2R_3R_2R_3R_1R_3R_2R_3R_2R_0R_1\\
+		&=R_1R_0R_2R_3R_2R_1R_3R_3R_2R_3R_2R_0R_1\\
+		&=R_1R_0R_2R_3R_2R_1R_2R_3R_2R_0R_1
+	\end{align*}
+	
+%	La rotación por la arista rojo-amarillo es $R_2R_1$. Al conjugarla por la rotación del centro de la cara (clockwise desde arriba, es $R_0R_2$), obtenemos $Q=(R_0R_2)^{-1}R_2R_1(R_0R_2)$, que es la rotación por la línea por el centro de la cara (amarillo) y el vértice que está en frente del azul. Conjugamos $R_3$ por esta rotación para obtener la reflexión por la cara izquierda del tetraedro, $Q_2=Q^{-1}R_3Q$. Y finalmente conjugamos $R_0$ por $Q_2$.
+%	\begin{align*}
+%		P_1&=Q_2R_0Q_2\\
+%		&=Q^{-1}R_3QR_0Q^{-1}R_3Q\\
+%		&=R_2R_0R_1R_2R_0R_1R_3R_2R_0R_2R_1R_0R_2R_0R_2R_0R_1R_2R_0R_1R_3R_2R_0R_2R_1R_0R_2
+%	\end{align*}
+%	ya que $Q^{-1}=R_2R_0R_1R_2R_0R_1$.
+%
+%\begin{align*}
+%	R_2R_3R_2R_3R_2R_3R_2R_3R_2R_3&=1\\
+%	R_3R_2R_3R_2R_3R_2R_3&=R_2R_3R_2
+%\end{align*}
+
+	Ahora veamos que se satisfacen las relaciones. Sustituyendo,
+	\[(P_0P_2)^2=(R_0R_3)^2=1\qquad (P_0P_3)^2=(R_0R_2)^2=1\qquad (P_2P_3)^5=(R_3R_2)^5=1\]
+
+\end{proof}
+
+Ahora
+\begin{itemize}
+	\item Sustituir en las fórmulas de las $S_i$ pero usando estas $P_i$.
+	\item Ya sabemos que cuando haces esto queda un poliedro.
+	\item Hay que buscar una $S_3$. ¿Qué necesitas que cumpla? Bueno, $S_1S_2$ es el medio giro en la arista o en la arista adyacente(depende del orden)
+	\item Necesitas:
+	\begin{itemize}
+		\item $(S_1S_2S_3)^2=1$ [Pensamos que esta es giro de brocheta por un palillo que va del vértice al centro de la cara]
+		\item $(S_2S_3)^2=1$.
+			\item Y después $vS_3=v$
+		\item $eS_3=v$
+	\end{itemize}
+\end{itemize}
 
 \section{En busca de otros poliedros quirales}
 Esta sección es una transcripción del trabajo de Bris.
