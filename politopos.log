@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.1)  11 AUG 2023 11:41
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.1)  13 AUG 2023 18:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -842,13 +842,13 @@ LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 4
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-<p2.png, id=85, 396.48125pt x 393.47pt>
+<p2.png, id=91, 396.48125pt x 393.47pt>
 File: p2.png Graphic file (type png)
 <use p2.png>
 Package pdftex.def Info: p2.png  used on input line 495.
 (pdftex.def)             Requested size: 174.00165pt x 172.68304pt.
  [3]
-<p3.png, id=99, 843.15pt x 433.62pt>
+<p3.png, id=104, 843.15pt x 433.62pt>
 File: p3.png Graphic file (type png)
 <use p3.png>
 Package pdftex.def Info: p3.png  used on input line 508.
@@ -878,7 +878,7 @@ T\OT1/cmr/m/n/10 )$ \OT1/ppl/m/n/10 tiene caras cuadradas, le pode-mos aplicar
 esta op-eraci[]on. Y como adem[]as
  []
 
-<p4.png, id=108, 790.955pt x 365.365pt>
+<p4.png, id=113, 790.955pt x 365.365pt>
 File: p4.png Graphic file (type png)
 <use p4.png>
 Package pdftex.def Info: p4.png  used on input line 573.
@@ -898,74 +898,84 @@ Overfull \hbox (3.94658pt too wide) in paragraph at lines 628--629
  []
 
 [7]
-<p1.png, id=127, 4111.36pt x 1799.72375pt>
-File: p1.png Graphic file (type png)
-<use p1.png>
-Package pdftex.def Info: p1.png  used on input line 661.
-(pdftex.def)             Requested size: 348.0033pt x 152.32915pt.
-
-Overfull \hbox (53.4513pt too wide) detected at line 678
-[]
- []
-
-[8 <./p1.png>]
-<p5.png, id=133, 486.81876pt x 549.05125pt>
+<p5.png, id=132, 486.81876pt x 549.05125pt>
 File: p5.png Graphic file (type png)
 <use p5.png>
-Package pdftex.def Info: p5.png  used on input line 699.
+Package pdftex.def Info: p5.png  used on input line 677.
 (pdftex.def)             Requested size: 92.80103pt x 104.6643pt.
 
 Missing character: There is no ; in font nullfont!
-<p6.png, id=134, 734.745pt x 682.55pt>
+<p6.png, id=133, 418.56375pt x 347.2975pt>
 File: p6.png Graphic file (type png)
 <use p6.png>
-Package pdftex.def Info: p6.png  used on input line 707.
-(pdftex.def)             Requested size: 174.00163pt x 161.63864pt.
+Package pdftex.def Info: p6.png  used on input line 685.
+(pdftex.def)             Requested size: 174.00163pt x 144.37483pt.
 
-Overfull \hbox (33.9432pt too wide) in paragraph at lines 697--709
+Overfull \hbox (8.03339pt too wide) in paragraph at lines 675--687
 [][] [] [] 
  []
 
 File: p5.png Graphic file (type png)
 <use p5.png>
-Package pdftex.def Info: p5.png  used on input line 714.
+Package pdftex.def Info: p5.png  used on input line 692.
 (pdftex.def)             Requested size: 92.80103pt x 104.6643pt.
 Missing character: There is no ; in font nullfont!
-<p7.pdf, id=135, 362.35374pt x 333.245pt>
-File: p7.pdf Graphic file (type pdf)
-<use p7.pdf>
-Package pdftex.def Info: p7.pdf  used on input line 722.
-(pdftex.def)             Requested size: 139.19917pt x 128.0175pt.
-[9 <./p5.png> <./p6.png>] [10 <./p7.pdf>] [11] [12] [13] (./politopos.aux)
+<p7.png, id=134, 380.42125pt x 342.27875pt>
+File: p7.png Graphic file (type png)
+<use p7.png>
+Package pdftex.def Info: p7.png  used on input line 700.
+(pdftex.def)             Requested size: 139.19917pt x 125.24667pt.
+[8 <./p5.png> <./p6.png (PNG copy)>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 734.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 734.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 734.
+
+[9 <./p7.png (PNG copy)>]
+Overfull \hbox (28.08588pt too wide) in paragraph at lines 806--943
+  []   []   []
+ []
+
+[10] [11
+
+] [12] [13] [14] (./politopos.aux)
 Package rerunfilecheck Info: File `politopos.out' has not changed.
-(rerunfilecheck)             Checksum: 5898D2316AC5006B354F5AAF75329E7D;2228.
+(rerunfilecheck)             Checksum: F25CB670EB5FB5AF0F440D93D1C4773C;2324.
  ) 
 Here is how much of TeX's memory you used:
- 24430 strings out of 476025
- 456037 string characters out of 5790018
+ 24431 strings out of 476025
+ 456056 string characters out of 5790018
  1872388 words of memory out of 5000000
  44428 multiletter control sequences out of 15000+600000
- 528731 words of font info for 80 fonts, out of 8000000 for 9000
+ 530276 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,11n,89p,1198b,737s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,11n,89p,1198b,739s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx7.pfb><
 /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></
 usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></u
-sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/loca
-l/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/t
-exlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texl
-ive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/
-texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive
-/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/t
-exmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on politopos.pdf (13 pages, 2932521 bytes).
+sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></us
+r/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/
+local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/lo
+cal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local
+/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/te
+xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/tex
+live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texli
+ve/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/t
+exlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/
+2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/te
+xmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on politopos.pdf (14 pages, 661593 bytes).
 PDF statistics:
- 243 PDF objects out of 1000 (max. 8388607)
- 184 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
- 152 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 248 PDF objects out of 1000 (max. 8388607)
+ 190 compressed objects within 2 object streams
+ 38 named destinations out of 1000 (max. 500000)
+ 155 words of extra memory for PDF output out of 10000 (max. 10000000)
 
