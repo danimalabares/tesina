@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.1)  26 AUG 2023 09:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.1)  23 SEP 2023 15:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -810,7 +810,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 Package hyperref Info: Option `colorlinks' set `true' on input line 45.
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 8
-9.
+4.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
 )
@@ -822,24 +822,24 @@ File: l3backend-pdftex.def 2023-01-16 L3 backend support: PDF output (pdfTeX)
 (./tesina.aux)
 \openout1 = `tesina.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 89.
-LaTeX Font Info:    ... okay on input line 89.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
+LaTeX Font Info:    ... okay on input line 84.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -900,252 +900,162 @@ e
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring ON on input line 89.
+Package hyperref Info: Link coloring ON on input line 84.
 
 (./tesina.out) (./tesina.out)
 \@outlinefile=\write4
 \openout4 = `tesina.out'.
 
-LaTeX Font Info:    Trying to load font information for U+msa on input line 91.
+<img1.png, id=39, 344.28625pt x 357.335pt>
+File: img1.png Graphic file (type png)
+<use img1.png>
+Package pdftex.def Info: img1.png  used on input line 88.
+(pdftex.def)             Requested size: 116.00307pt x 120.39633pt.
+ [1
 
+{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
+al/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc} <./img1.png>]
+LaTeX Font Info:    Trying to load font information for U+msa on input line 128
+.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 91.
-
+LaTeX Font Info:    Trying to load font information for U+msb on input line 128
+.
 
 (/usr/local/texlive/2023/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 
-LaTeX Warning: Citation `bracho2013finite' on page 1 undefined on input line 94
-.
+LaTeX Warning: Citation `petcox' on page 2 undefined on input line 128.
 
 
-LaTeX Warning: Citation `bracho2021chiral' on page 1 undefined on input line 94
-.
-
-(./tesina.toc
-LaTeX Font Info:    Trying to load font information for OMS+ppl on input line 1
-0.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omsppl.fd
-File: omsppl.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 10.
-)
-\tf@toc=\write5
-\openout5 = `tesina.toc'.
+LaTeX Warning: Citation `abstract-polytopes' on page 2 undefined on input line 
+135.
 
 
-
-LaTeX Warning: Citation `grunbaum1977regular' on page 1 undefined on input line
- 100.
-
-[1
-
-{/usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map}{/usr/loc
-al/texlive/2023/texmf-dist/fonts/enc/dvips/base/8r.enc}]
-
-LaTeX Warning: Citation `bracho2013chiral' on page 2 undefined on input line 10
-4.
-
-
-LaTeX Warning: Citation `bracho2021finite' on page 2 undefined on input line 10
-4.
-
-
-LaTeX Warning: Citation `bracho2013chiral' on page 2 undefined on input line 10
-4.
-
-[2]
-Overfull \hbox (6.01393pt too wide) in paragraph at lines 348--350
-\OT1/ppl/m/n/10 De la misma man-era, en am-bos ca-sos de-fi-namos las fac-etas 
-como las com-po-nentes conexas
+Overfull \hbox (20.80234pt too wide) in paragraph at lines 137--138
+[]\OT1/ppl/m/n/10 Regular star poly-he-dra are the nat-u-ral gen-er-l-iza-tion 
+of reg-u-lar star poly-gons to 3-dimensional
  []
 
 
-LaTeX Warning: Citation `bracho2013finite' on page 3 undefined on input line 47
-6.
+LaTeX Warning: Citation `petcox' on page 2 undefined on input line 142.
 
+[2
 
-LaTeX Warning: Citation `bracho2021quiral' on page 3 undefined on input line 47
-9.
+]
+
+LaTeX Warning: Citation `abstract-polytopes' on page 3 undefined on input line 
+159.
 
 [3]
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 4
-91.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+
+LaTeX Warning: Citation `schulte-chiral' on page 4 undefined on input line 186.
+
+
+
+Overfull \hbox (9.74782pt too wide) in paragraph at lines 188--189
+[]\OT1/ppl/m/n/10 To con-struct a ge-o-met-ric poly-tope de-fine the base ver-t
+ex $\OML/cmm/m/it/10 v$ \OT1/ppl/m/n/10 to be the same as the $\OMS/cmsy/m/n/10
+ f\OT1/cmr/m/n/10 5\OML/cmm/m/it/10 =\OT1/cmr/m/n/10 2\OML/cmm/m/it/10 ; \OT1/c
+mr/m/n/10 3\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 5\OMS/cmsy/m/n/10 g$\OT1/ppl/m/n/
+10 's,
+ []
+
+
+LaTeX Warning: Citation `petcox' on page 4 undefined on input line 190.
+
+
+LaTeX Warning: Citation `petcox' on page 4 undefined on input line 209.
+
+[4]
+
+LaTeX Warning: Citation `schulte-chiral' on page 5 undefined on input line 211.
+
+
+
+LaTeX Warning: Citation `petcox' on page 5 undefined on input line 218.
+
+
+LaTeX Warning: Citation `petcox' on page 5 undefined on input line 221.
+
+[5]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 233.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\left' on input line 233.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 233.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endgroup' on input line 233.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@@over' on input line 233.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\right' on input line 233.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 233.
+
+
+LaTeX Warning: Citation `schulte-chiral' on page 6 undefined on input line 234.
+
+
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 2
+48.
+(/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-)
-<p3.png, id=98, 843.15pt x 433.62pt>
-File: p3.png Graphic file (type png)
-<use p3.png>
-Package pdftex.def Info: p3.png  used on input line 511.
-(pdftex.def)             Requested size: 193.33647pt x 99.42613pt.
+) [6
 
-
-LaTeX Warning: Citation `bracho2021quiral' on page 4 undefined on input line 51
-2.
-
-
-LaTeX Warning: Citation `bracho2021quiral' on page 4 undefined on input line 51
-2.
-
-
-Overfull \hbox (6.69095pt too wide) in paragraph at lines 516--517
-[]\OT1/ppl/b/n/10 Teorema. []\OT1/ppl/m/n/10 Para cualquier $\OML/cmm/m/it/10 
- \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 1)$ \O
-T1/ppl/m/n/10 y cualquier poli-topo reg-u-lar $\OMS/cmsy/m/n/10 T$\OT1/ppl/m/n/
-10 , $\OML/cmm/m/it/10 PC[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 T\OT1/cmr/m/n/10 )
-$ \OT1/ppl/m/n/10 es un poliedro. 
- []
-
-
-Overfull \hbox (13.39246pt too wide) in paragraph at lines 519--520
-[]\OT1/ppl/b/n/10 Observaci^^Son. []\OT1/ppl/m/n/10 Para cua-lesquiera $\OML/cm
-m/m/it/10  \OMS/cmsy/m/n/10 2 \OT1/cmr/m/n/10 (0\OML/cmm/m/it/10 ; \OT1/cmr/m/
-n/10 1)$\OT1/ppl/m/n/10 , un 4-politopo reg-u-lar $\OMS/cmsy/m/n/10 T$ \OT1/ppl
-/m/n/10 y su dual $\OMS/cmsy/m/n/10 T[]$\OT1/ppl/m/n/10 , $\OML/cmm/m/it/10 PC[
-]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 T\OT1/cmr/m/n/10 ) =
- []
-
-[4 <./p3.png>]
-Overfull \hbox (0.3643pt too wide) in paragraph at lines 565--566
-[]\OT1/ppl/m/n/10 Como $\OML/cmm/m/it/10 PC[]\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10 
-T\OT1/cmr/m/n/10 )$ \OT1/ppl/m/n/10 tiene caras cuadradas, le pode-mos aplicar 
-esta op-eraci[]on. Y como adem[]as
- []
-
-<p4.png, id=106, 790.955pt x 365.365pt>
-File: p4.png Graphic file (type png)
-<use p4.png>
-Package pdftex.def Info: p4.png  used on input line 581.
-(pdftex.def)             Requested size: 193.33647pt x 89.30614pt.
-[5] [6 <./p4.png>]
-Overfull \hbox (3.94658pt too wide) in paragraph at lines 636--637
-[]\OT1/ppl/m/n/10 Distintos val-ores de $\OML/cmm/m/it/10 $ \OT1/ppl/m/n/10 en
- la con-strucci[]on de Petrie-Coxeter dan lu-gar a dis-tin-tos poliedros.
- []
-
-LaTeX Font Info:    Font shape `OMS/ppl/b/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/b/n' tried instead on input line 651.
-[7]
-<p9.png, id=124, 991.705pt x 953.5625pt>
-File: p9.png Graphic file (type png)
-<use p9.png>
-Package pdftex.def Info: p9.png  used on input line 656.
-(pdftex.def)             Requested size: 154.66681pt x 148.71732pt.
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 657.
-<p5.png, id=125, 486.81876pt x 549.05125pt>
-File: p5.png Graphic file (type png)
-<use p5.png>
-Package pdftex.def Info: p5.png  used on input line 682.
-(pdftex.def)             Requested size: 92.80103pt x 104.6643pt.
-
-Missing character: There is no ; in font nullfont!
-<p6.png, id=126, 418.56375pt x 347.2975pt>
-File: p6.png Graphic file (type png)
-<use p6.png>
-Package pdftex.def Info: p6.png  used on input line 690.
-(pdftex.def)             Requested size: 174.00163pt x 144.37483pt.
-
-Overfull \hbox (8.03339pt too wide) in paragraph at lines 680--692
-[][] [] [] 
- []
-
-[8 <./p9.png>]
-File: p5.png Graphic file (type png)
-<use p5.png>
-Package pdftex.def Info: p5.png  used on input line 697.
-(pdftex.def)             Requested size: 92.80103pt x 104.6643pt.
-
-Missing character: There is no ; in font nullfont!
-<p7.png, id=136, 380.42125pt x 342.27875pt>
-File: p7.png Graphic file (type png)
-<use p7.png>
-Package pdftex.def Info: p7.png  used on input line 705.
-(pdftex.def)             Requested size: 139.19917pt x 125.24667pt.
-
-LaTeX Warning: Citation `bracho2021chiral' on page 9 undefined on input line 72
-0.
-
-
-Overfull \hbox (9.00285pt too wide) in paragraph at lines 720--721
-\OT1/ppl/m/n/10 En [[]] ten-emos las sigu-ientes f[]ormulas para con-struir un 
-poliedro quiral dadas las simetr[]^^Pas
- []
-
-[9 <./p5.png> <./p6.png (PNG copy)> <./p7.png (PNG copy)>]
-Overfull \hbox (1.90001pt too wide) in paragraph at lines 729--876
-[][] [] 
- []
-
-[10]
-Overfull \hbox (14.91768pt too wide) detected at line 1057
-[]
- []
-
-
-Package amsmath Warning: Bracket group [[3,3,5] at formula start!
-(amsmath)                It could be a misspelled positional argument.
-(amsmath)                If it belongs to the formula add a \relax in
-(amsmath)                front to hide it on input line 1081.
-
-
-Package amsmath Warning: Bracket group [[3,3,5] at formula start!
-(amsmath)                It could be a misspelled positional argument.
-(amsmath)                If it belongs to the formula add a \relax in
-(amsmath)                front to hide it on input line 1081.
-
-
-Overfull \hbox (9.25745pt too wide) detected at line 1081
-[]
- []
-
-[11]
-Overfull \hbox (33.397pt too wide) detected at line 1128
-[]
- []
-
-[12
-
-] (./tesina.aux)
+]
+(./tesina.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `tesina.out' has not changed.
-(rerunfilecheck)             Checksum: A879D687E2EF20F293043F53014EDF64;2379.
+(rerunfilecheck)             Checksum: 20DA31FB73512BBC76FED7046EF583FB;1359.
  ) 
 Here is how much of TeX's memory you used:
- 25484 strings out of 476025
- 487322 string characters out of 5790018
- 1872388 words of memory out of 5000000
- 45453 multiletter control sequences out of 15000+600000
- 529489 words of font info for 82 fonts, out of 8000000 for 9000
+ 25139 strings out of 476025
+ 481724 string characters out of 5790018
+ 1861388 words of memory out of 5000000
+ 45126 multiletter control sequences out of 15000+600000
+ 526702 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,15n,89p,1195b,796s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbsy10.pf
-b></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
-></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb>
-</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><
+ 84i,6n,89p,1195b,550s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
+</usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
 /usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></u
-sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
-/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/lo
-cal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local
-/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/
-texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/te
-xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texl
-ive/2023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/
-texlive/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive
-/2023/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/t
-exmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on tesina.pdf (12 pages, 720861 bytes).
+sr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr
+/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
+ocal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/loc
+al/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/
+texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/tex
+live/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texliv
+e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
+/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2
+023/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texli
+ve/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023
+/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-
+dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on tesina.pdf (6 pages, 398070 bytes).
 PDF statistics:
- 236 PDF objects out of 1000 (max. 8388607)
- 180 compressed objects within 2 object streams
- 37 named destinations out of 1000 (max. 500000)
- 147 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 180 PDF objects out of 1000 (max. 8388607)
+ 136 compressed objects within 2 object streams
+ 32 named destinations out of 1000 (max. 500000)
+ 82 words of extra memory for PDF output out of 10000 (max. 10000000)
 
