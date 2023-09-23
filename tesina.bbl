@@ -1,0 +1,130 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated as
+% required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+\datalist[entry]{none/global//global/global}
+  \entry{petcox}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BJ}{%
+         family={Bracho},
+         familyi={B\bibinitperiod},
+         given={Javier},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HI}{%
+         family={Hubard},
+         familyi={H\bibinitperiod},
+         given={Isabel},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Pellicer},
+         familyi={P\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJ+1}
+    \strng{fullhash}{BJHIPD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{abstract}{%
+    We study chiral polyhedra in 3-dimensional geometries (Euclidean,
+  hyperbolic, and projective) in a unified manner. This extends to hyperbolic
+  and projective spaces some structural results in the classification of chiral
+  polyhedra in Euclidean 3-space given in 2005 by Schulte. Then, we describe a
+  way to produce examples with helical faces based on a classic Petrie--Coxeter
+  construction, yielding a new family in {\$}{\$}{$\backslash$}mathbb
+  {\{}S{\}}\^{}3{\$}{\$}which is described exhaustively.%
+    }
+    \verb{doi}
+    \verb 10.1007/s00454-021-00317-0
+    \endverb
+    \field{isbn}{1432-0444}
+    \field{number}{3}
+    \field{pages}{1025\bibrangedash 1052}
+    \field{title}{Chiral Polyhedra in 3-Dimensional Geometries and from a
+  Petrie--Coxeter Construction}
+    \verb{url}
+    \verb https://doi.org/10.1007/s00454-021-00317-0
+    \endverb
+    \field{volume}{66}
+    \field{journaltitle}{Discrete \& Computational Geometry}
+    \field{year}{2021}
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
+  \endentry
+
+  \entry{abstract-polytopes}{book}{}
+    \name{author}{2}{}{%
+      {{hash=MP}{%
+         family={McMullen},
+         familyi={M\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Schulte},
+         familyi={S\bibinitperiod},
+         given={Egon},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{MPSE1}
+    \strng{fullhash}{MPSE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Abstract Regular Polytopes}
+    \verb{doi}
+    \verb 10.1017/CBO9780511546686.003
+    \endverb
+    \field{series}{Encyclopedia of Mathematics and its Applications}
+    \field{title}{Regular Polytopes}
+    \field{year}{2002}
+  \endentry
+
+  \entry{schulte-chiral}{inproceedings}{}
+    \name{author}{2}{}{%
+      {{hash=SE}{%
+         family={Schulte},
+         familyi={S\bibinitperiod},
+         given={Egon},
+         giveni={E\bibinitperiod},
+      }}%
+      {{hash=WAI}{%
+         family={Weiss},
+         familyi={W\bibinitperiod},
+         given={Asia\bibnamedelima Ivi{\'c}},
+         giveni={A\bibinitperiod\bibinitdelim I\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{SEWAI1}
+    \strng{fullhash}{SEWAI1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{booktitle}{Applied Geometry And Discrete Mathematics}
+    \field{title}{Chiral Polytopes}
+    \verb{url}
+    \verb https://api.semanticscholar.org/CorpusID:44586512
+    \endverb
+    \field{year}{1990}
+  \endentry
+\enddatalist
+\endinput
