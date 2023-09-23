@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.1)  23 SEP 2023 16:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.1)  23 SEP 2023 17:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1291,7 +1291,7 @@ File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `tesina.out' has not changed.
-(rerunfilecheck)             Checksum: EDC28B88E8121C4CB32A497E6B7F5A9D;1451.
+(rerunfilecheck)             Checksum: 2FDA8C61B9B5F3713A738D7452C86294;1191.
 
 Package biblatex Warning: Please (re)run BibTeX on the file(s):
 (biblatex)                tesina
@@ -1326,7 +1326,7 @@ ve/2023/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2023/
 texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-d
 ist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fon
 ts/type1/urw/palatino/uplri8a.pfb>
-Output written on tesina.pdf (7 pages, 434703 bytes).
+Output written on tesina.pdf (7 pages, 434413 bytes).
 PDF statistics:
  215 PDF objects out of 1000 (max. 8388607)
  167 compressed objects within 2 object streams
