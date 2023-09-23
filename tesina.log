@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.1)  23 SEP 2023 15:02
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.1)  23 SEP 2023 15:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -981,44 +981,49 @@ LaTeX Warning: Citation `petcox' on page 5 undefined on input line 218.
 
 LaTeX Warning: Citation `petcox' on page 5 undefined on input line 221.
 
-[5]
+<img2.png, id=83, 462.72874pt x 419.5675pt>
+File: img2.png Graphic file (type png)
+<use img2.png>
+Package pdftex.def Info: img2.png  used on input line 231.
+(pdftex.def)             Requested size: 386.67296pt x 350.6097pt.
+[5] [6 <./img2.png (PNG copy)>]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 233.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\left' on input line 233.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 233.
+(hyperref)                removing `math shift' on input line 238.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\endgroup' on input line 233.
+(hyperref)                removing `\left' on input line 238.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@over' on input line 233.
+(hyperref)                removing `\begingroup' on input line 238.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\right' on input line 233.
+(hyperref)                removing `\endgroup' on input line 238.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 233.
+(hyperref)                removing `\@@over' on input line 238.
 
 
-LaTeX Warning: Citation `schulte-chiral' on page 6 undefined on input line 234.
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\right' on input line 238.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 238.
+
+
+LaTeX Warning: Citation `schulte-chiral' on page 7 undefined on input line 239.
 
 
 LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 2
-48.
+53.
 (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-) [6
+) [7
 
 ]
 (./tesina.aux)
@@ -1029,13 +1034,13 @@ Package rerunfilecheck Info: File `tesina.out' has not changed.
 (rerunfilecheck)             Checksum: 20DA31FB73512BBC76FED7046EF583FB;1359.
  ) 
 Here is how much of TeX's memory you used:
- 25139 strings out of 476025
- 481724 string characters out of 5790018
+ 25154 strings out of 476025
+ 481933 string characters out of 5790018
  1861388 words of memory out of 5000000
- 45126 multiletter control sequences out of 15000+600000
+ 45139 multiletter control sequences out of 15000+600000
  526702 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,6n,89p,1195b,550s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,7n,89p,1195b,550s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
@@ -1052,10 +1057,10 @@ e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 ve/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023
 /texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-
 dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on tesina.pdf (6 pages, 398070 bytes).
+Output written on tesina.pdf (7 pages, 419021 bytes).
 PDF statistics:
- 180 PDF objects out of 1000 (max. 8388607)
- 136 compressed objects within 2 object streams
- 32 named destinations out of 1000 (max. 500000)
- 82 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 188 PDF objects out of 1000 (max. 8388607)
+ 142 compressed objects within 2 object streams
+ 34 named destinations out of 1000 (max. 500000)
+ 87 words of extra memory for PDF output out of 10000 (max. 10000000)
 
