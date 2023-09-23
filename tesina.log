@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.1)  23 SEP 2023 15:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.1)  23 SEP 2023 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -975,18 +975,19 @@ LaTeX Warning: Citation `petcox' on page 4 undefined on input line 209.
 LaTeX Warning: Citation `schulte-chiral' on page 5 undefined on input line 211.
 
 
-
-LaTeX Warning: Citation `petcox' on page 5 undefined on input line 218.
-
-
-LaTeX Warning: Citation `petcox' on page 5 undefined on input line 221.
-
 <img2.png, id=83, 462.72874pt x 419.5675pt>
 File: img2.png Graphic file (type png)
 <use img2.png>
-Package pdftex.def Info: img2.png  used on input line 231.
+Package pdftex.def Info: img2.png  used on input line 214.
 (pdftex.def)             Requested size: 386.67296pt x 350.6097pt.
-[5] [6 <./img2.png (PNG copy)>]
+[5 <./img2.png (PNG copy)>]
+
+LaTeX Warning: Citation `petcox' on page 6 undefined on input line 224.
+
+
+LaTeX Warning: Citation `petcox' on page 6 undefined on input line 227.
+
+[6]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 238.
@@ -1040,7 +1041,7 @@ Here is how much of TeX's memory you used:
  45139 multiletter control sequences out of 15000+600000
  526702 words of font info for 75 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,7n,89p,1195b,550s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,8n,89p,1195b,550s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
@@ -1057,7 +1058,7 @@ e/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive
 ve/2023/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023
 /texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-
 dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on tesina.pdf (7 pages, 419021 bytes).
+Output written on tesina.pdf (7 pages, 419499 bytes).
 PDF statistics:
  188 PDF objects out of 1000 (max. 8388607)
  142 compressed objects within 2 object streams
