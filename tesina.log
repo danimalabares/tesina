@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.1)  23 SEP 2023 17:55
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.1)  23 SEP 2023 19:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1326,7 +1326,7 @@ ve/2023/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2023/
 texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-d
 ist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fon
 ts/type1/urw/palatino/uplri8a.pfb>
-Output written on tesina.pdf (7 pages, 434413 bytes).
+Output written on tesina.pdf (7 pages, 434356 bytes).
 PDF statistics:
  215 PDF objects out of 1000 (max. 8388607)
  167 compressed objects within 2 object streams
