@@ -1,0 +1,174 @@
+#ABSTRACT POLYTOPES
+
+LoadPackage("sonata");
+
+Print("-------------------------------\n",
+"       ABSTRACT POLYTOPES\n",
+"-------------------------------\n\n");
+
+#First we define the groups
+
+#{3,3,5}
+
+f:=FreeGroup("E0","E1","E2","E3");
+g:=f/[f.1^2,f.2^2,f.3^2,f.4^2,
+(f.1*f.2)^3,(f.2*f.3)^3,(f.3*f.4)^5,
+(f.1*f.3)^2,(f.1*f.4)^2,(f.2*f.4)^2];
+
+#Rename the generators of g to match notation in the Mathematica notebooks (E's are R's in the thesis)
+E0:=g.1;
+E1:=g.2;
+E2:=g.3;
+E3:=g.4;
+
+g:=Group([E0,E1,E2,E3]);#Group of {3,3,5}
+cg:=Subgroup(g,[E0,E1,E2]);#Cell group
+fg:=Subgroup(g,[E0,E1]);#Face group
+
+
+#{5/2,3,5}
+
+P0:=E0;
+P1:=E1*E2*E3*E2*E1*E0*E1*E2*E3*E2*E1;
+P2:=E3;
+P3:=E2;
+
+h:=Group([P0,P1,P2,P3]);#Group {5/2,3,5}
+ch:=Subgroup(h,[P0,P1,P2]);#Cell group
+fh:=Subgroup(h,[P0,P1]);#Face group
+
+
+#{12/(1,5),3,5}
+
+S1:=P0*P1*P3*P2;
+S2:=P2*P1;
+S3:=P3*P2;
+
+q:=Subgroup(h,[S1,S2,S3]);#Group of chiral
+cq:=Subgroup(q,[S1,S2]);#Cell group
+fq:=Subgroup(q,[S1]);#Face group
+
+
+
+Print("-------------------------------\n",
+"STRING RELATIONS OF {5/2,3,5}\n");
+Print("|<P0>|=", Order(P0), "\n");
+Print("|<P1>|=", Order(P1), "\n");
+Print("|<P2>|=", Order(P2), "\n");
+Print("|<P3>|=", Order(P3), "\n\n");
+
+Print("|<P0*P1>|=", Order(P0*P1), "\n");
+Print("|<P1*P2>|=", Order(P1*P2), "\n");
+Print("|<P2*P3>|=", Order(P2*P3), "\n\n");
+
+Print("|<P0*P2>|=", Order(P0*P2), "\n");
+Print("|<P0*P3>|=", Order(P0*P3), "\n");
+Print("|<P1*P3>|=", Order(P1*P3), "\n\n");
+
+Print("Are the groups of {3,3,5} and {5/2,3,5} the same? ", g=h,"\n\n\n");
+
+
+#FIND w0
+
+#Q:=E0*E1*E2*E1*E2*E3*E2*E1*E3*E2*E1*E2*E3*E2*E3*E2*E1;
+Q:=E0*E1*E2*E1*E2*E3*E2*E1*E3*E2*E3*E2*E1*E2*E3*E2*E1;
+P1^(Q*P2)=P1;
+
+
+
+Print("-------------------------------\n",
+"FACE COUNT OF THE THREE POLYTOPES\n\n");
+
+Print("{3,3,5}","\n","\n");
+
+#j-faces as defined in McMullen & Schulte
+
+G0:=Subgroup(g,[E1,E2,E3]);
+G1:=Subgroup(g,[E0,E2,E3]);
+G2:=Subgroup(g,[E0,E1,E3]);
+G3:=Subgroup(g,[E0,E1,E2]);
+
+
+Print("Vertices in the face: ",Size(RightTransversal(fg,Subgroup(fg,[E1]))),"\n");
+Print("Vertices in the cell: ",Size(RightTransversal(cg,Subgroup(cg,[E1,E2]))),"\n");
+Print("Vertices in the polytope: ",Size(RightTransversal(g,G0)),"\n");
+Print("Edges in the face: ",Size(RightTransversal(fg,Subgroup(fg,[E0]))),"\n");
+Print("Edges in the cell: ",Size(RightTransversal(cg,Subgroup(cg,[E0,E2]))),"\n");
+Print("Edges in the polytope: ",Size(RightTransversal(g,G1)),"\n");
+Print("Faces in the cell: ",Size(RightTransversal(cg,Subgroup(cg,[E0,E1]))),"\n");
+Print("Faces in the polytope: ",Size(RightTransversal(g,G2)),"\n");
+Print("Cells in the polytope: ",Size(RightTransversal(g,G3)),"\n","\n","\n");
+
+
+
+Print("{5/2,3,5}\n\n");
+
+#j-faces as defined in "Abstract Polytopes" (McMullen & Schulte)
+H0:=Subgroup(h,[P1,P2,P3]);
+H1:=Subgroup(h,[P0,P2,P3]);
+H2:=Subgroup(h,[P0,P1,P3]);
+H3:=Subgroup(h,[P0,P1,P2]);
+
+
+Print("Vertices in the face: ",Size(RightTransversal(fh,Subgroup(fh,[P1]))),"\n");
+Print("Vertices in the cell: ",Size(RightTransversal(ch,Subgroup(ch,[P1,P2]))),"\n");
+Print("Vertices in the polytope: ",Size(RightTransversal(h,H0)),"\n");
+Print("Edges in the face: ",Size(RightTransversal(fh,Subgroup(fh,[P0]))),"\n");
+Print("Edges in the cell: ",Size(RightTransversal(ch,Subgroup(ch,[P0,P2]))),"\n");
+Print("Edges in the polytope: ",Size(RightTransversal(h,H1)),"\n");
+Print("Faces in the cell: ",Size(RightTransversal(ch,Subgroup(ch,[P0,P1]))),"\n");
+Print("Faces in the polytope: ",Size(RightTransversal(h,H2)),"\n");
+Print("Cells in the polytope: ",Size(RightTransversal(h,H3)),"\n","\n","\n");
+
+Print("Chiral\n\n");
+
+#j-faces as defined in "Chiral Polytopes" (Schulte)
+A0:=Subgroup(q,[S2,S3]);
+A1:=Subgroup(q,[S3,S1*S2]);
+A2:=Subgroup(q,[S1,S2*S3]);
+A3:=Subgroup(q,[S1,S2]);
+
+Print("Vertices in the cell: ",Size(RightTransversal(cq,Subgroup(cq,[S2]))),"\n");
+Print("Vertices in the polytope: ",Size(RightTransversal(q,A0)),"\n");
+Print("Edges in the cell: ",Size(RightTransversal(cq,Subgroup(cq,[S1*S2]))),"\n");
+Print("Edges in the polytope: ",Size(RightTransversal(q,A1)),"\n");
+Print("Faces in the cell: ",Size(RightTransversal(cq,Subgroup(cq,[S1]))),"\n");
+Print("Faces in the polytope: ",Size(RightTransversal(q,A2)),"\n");
+Print("Cells in the polytope: ",Size(RightTransversal(q,A3)),"\n","\n","\n");
+
+
+Print("-------------------------------\n",
+"STRING RELATIONS OF CHIRAL\n\n");
+Print("|<S1>|=", Order(S1), "\n");
+Print("|<S2>|=", Order(S2), "\n");
+Print("|<S3>|=", Order(S3), "\n\n");
+
+Print("|<S1*S2>|=", Order(S1*S2), "\n");
+Print("|<S1*S2*S3>|=", Order(S1*S2*S3), "\n");
+Print("|<S2*S3>|=", Order(S2*S3), "\n\n\n");
+
+#Print("|<S1,S2>|=", Size(Subgroup(g,[S1,S2])),"\n"); FACE
+#Print("|<S1,S2,S3>|=", Size(Subgroup(g,[S1,S2,S3])),"\n"); CELL
+
+
+Print("-------------------------------\n",
+"INTERSECTION PROPERTY OF CHIRAL\n\n");
+Print("<S1>INT<S2>==<1>  ", Size(Intersection(fq,Subgroup(q,[S2])))=1,"\n");
+Print("<S2>INT<S3>==<1>  ", Size(Intersection(Subgroup(q,[S2]),Subgroup(q,[S3])))=1,"\n");
+Print("<S1,S2>INT<S2,S3>==<S2>  ", IsIsomorphicGroup(Intersection(Subgroup(q,[S1,S2]),Subgroup(q,[S2,S3])),Subgroup(q,[S2])),"\n\n\n");
+
+
+Print("-------------------------------\n",
+"COMBINATORIALLY CHIRAL\n\n");
+
+Print("Is there an automorphism that satisfies eq. (3)?\n\n");
+
+rho:=GroupHomomorphismByImages(cq,cq,[S1,S2],[S1^-1,S1^2*S2]);
+Print("rho(S1)=S1^-1  ",Image(rho,S1)=S1^-1,"\n");
+Print("rho(S2)=S1^2*S2  ",Image(rho,S2)=S1^2*S2,"\n");
+
+
+#Find the automorphism of the whole polytope
+rho2:=GroupHomomorphismByImages(q,q,[S1,S2,S3],[S1^-1,S1^2*S2,S3]);
+
+Print("\n","Can we extend it to the whole group?  ",rho2);
