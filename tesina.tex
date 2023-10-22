@@ -1,6 +1,5 @@
 \documentclass{article}
 \usepackage{titlesec}
-
 \usepackage[left=4cm, right=4cm]{geometry}
 \usepackage{palatino}%Font
 \usepackage{graphicx}
@@ -44,7 +43,7 @@
 \crefname{figure}{fig.}{figs.}
 \Crefname{figure}{Fig.}{Figs.}
 \renewcommand{\figurename}{Fig.}
-\usepackage{appendix}
+\usepackage[title,titletoc]{appendix}
 
 %Bold references
 %\usepackage{xpatch}
@@ -78,8 +77,9 @@
 \DeclareMathOperator{\Stab}{Stab}
 
 %Referencias
-\usepackage[style=nature,backend=bibtex]{biblatex}
+\usepackage[style=numeric-comp, backend=bibtex, doi=false, isbn=false, natbib=true]{biblatex}
 \addbibresource{bib.bib}
+
 
 \title{A new chiral 4-polytope}
 \author{\\Daniel González Casanova Azuela}
@@ -142,7 +142,7 @@ A mis queridos tutores Roli e Isabel por transmitirme tanta emoción. A Bris por
 	
 	
 	\section*{Summary}
-	In the context of skeletal geometric complexes, chiral polytopes are those with maximal rotational symmetry but no reflection symmetry. We show that the natural rotation about the base edge in two of the chiral polyhedra from \cite{petcox} yields, in each case, a chiral 4-polytope $\E^4$. Both polytopes are shown to be combinatorially chiral.
+	In the context of skeletal geometric complexes, chiral polytopes are those with maximal rotational symmetry but no reflection symmetry. We show that the natural rotation about the base edge in two of the chiral polyhedra from \cite{petcox} yields, in each case, a chiral 4-polytope in $\E^4$. Both polytopes are shown to be combinatorially chiral.
 	
 	\vspace{1cm}
 	%	\phantomsection
@@ -151,7 +151,7 @@ A mis queridos tutores Roli e Isabel por transmitirme tanta emoción. A Bris por
 	\section{Introduction}
 	Despite polygons and polyhedra being basic concepts in mathematics,
 	% studied since antiquity,
-	 it is not at all obvious what exactly these words mean. Chiral polytopes arise from the so-called skeletal approach, where polygons and their higher-dimensional analogues are introduced as 1-dimensional complexes, with no need of an enclosed surface or solid.
+	 it is not at all obvious what these words exactly mean. Chiral polytopes arise from the so-called skeletal approach, where polygons and their higher-dimensional analogues are introduced as 1-dimensional complexes, with no need of an enclosed surface or solid.
 	
 	Such definition allows for symmetric structures otherwise unseen, an example of which are chiral polytopes. While the symmetry group of a regular polyhedron acts transitively on the set of flags, a polyhedron is geometrically chiral when its symmetry group has two orbits on the flags and adjacent flags are in distinct orbits. This captures the idea of maximal rotational symmetry but no reflection symmetry.
 	
@@ -159,7 +159,7 @@ A mis queridos tutores Roli e Isabel por transmitirme tanta emoción. A Bris por
 	
 	In this thesis we show that the natural rotation about the base edge in two such spherical polyhedra successfully yields, in each case, a chiral 4-polytope. Their combinatorial structures are then shown to be chiral as well---something that does not occur for their facets, which are combinatorially regular.
 	
-	Demostrations are given by GAP programs in which the abstract and geometric structures are compared. Geometric realizations are based on the reflection matrices used in \cite{petcox}. A wide range of figures created in Mathematica are provided, some of which use part of the code developed for the aforementioned paper. All programs used are available \href{https://github.com/danimalabares/tesina.git}{online}.
+	Proofs are given by GAP programs in which the abstract and geometric structures are compared. Geometric realizations are based on the reflection matrices used in \cite{petcox}. All programs used are available online (see \Cref{app:A}).
 	
 	\section{Historical background}
 	We begin with a brief historical discussion on the concept of polytope.
@@ -175,7 +175,7 @@ A mis queridos tutores Roli e Isabel por transmitirme tanta emoción. A Bris por
 	
 	Next in history is Coxeter, who, among many other results, classiffied all discrete euclidean reflection groups. In the 1930's him and Petrie redefined the concept of polytope by letting them have infinite faces, thus finding three more regular polyhedra in $\E^3$ \cite{regular-skew}. These have non-planar vertex-figures.
 	
-	Fourty years later, in 1977, Grünbaum once again reintroduced polytopes, this time permitting the faces to be non-planar \cite{grunbaum}. The list of regular polyhedra in $\E^3$ was extended to 18 in the finite case and 48 in total \cite{regular-ordinary}. All but one were classified by Grünbaum, the remaining and the completeness of the list due to Dress \cite{Dress1981,Dress1985}.
+	Fourty years later, in 1977, Grünbaum once again reintroduced polytopes, this time permitting the faces to be non-planar \cite{grunbaum}. The list of regular polyhedra in $\E^3$ was extended to 18 in the finite case and 48 in total \cite{regular-ordinary}. All but one were classified by Grünbaum, the remaining one and the completeness of the list are due to Dress \cite{Dress1981,Dress1985}.
 	
 	The study of the underlying combinatorial structure of polytopes led to the concept of abstract polytope. In 1967 McMullen studied the lattice of faces of a polytope and compared its automorphisms with geometric symmetries \cite{mcmullen-combinatorially}. In Grümbaum's \cite{grunbaum-regularity}, the term \textit{polystroma} (stroma=stratum, layer) is defined to mean an abstract partially order structure resembling the face lattice of a polytope.
 	
@@ -199,23 +199,23 @@ A mis queridos tutores Roli e Isabel por transmitirme tanta emoción. A Bris por
 		\item the vertex-figure at every vertex is a skeletal polyhedron.
 		\end{enumerate}
 	
-	Hereafter we omit the term "skeletal" from our definition. If $\p$ is a 4-polytope, the set of vertices, edges, faces and cells is a partial order with respect to inclusion. We say two such elements are \textit{incident} if they are comparable. This poset is called the \textit{abstract polytope associated to $\p$}. As we shall see, 4-polytopes defined as above are \textit{realizations} of abstract polytopes in the sense of \Cref{sec:abstract-defs}.
+	Hereafter we omit the term "skeletal" when the context permits it. If $\p$ is a 4-polytope, the set of vertices, edges, faces and cells is a partial order with respect to inclusion. We say two such elements are \textit{incident} if they are comparable. This poset is called the \textit{abstract polytope associated to $\p$}. As we shall see, 4-polytopes defined as above are realizations of abstract polytopes in the sense of \cite{abstract-polytopes} and \Cref{sec:abstract-defs}.
 	
-	A \textit{flag} is a 4-tuple of incident vertex, edge, face and cell. Two flags are \textit{adjacent} when they differ by only one element. We call two flags \textit{0-adjacent} if they difer by a vertex, \textit{1-adjacent} if they difer by an edge, \textit{2-adjacent} if they difer by a face and \textit{3-adjacent} if they difer by a cell.
+	A \textit{flag} is a 4-tuple of incident vertex, edge, face and cell. Two flags are \textit{adjacent} when they differ by only one element. We call two flags \textit{0-adjacent} if they differ by a vertex, \textit{1-adjacent} if they differ by an edge, \textit{2-adjacent} if they differ by a face and \textit{3-adjacent} if they differ by a cell.
 	
 	A \textit{symmetry} of $\p$ is an isometry of $\E^4$ that preserves it set-wise. The group of symmetries of $\p$ will be denoted by $G(\p)$. We call $\p$ \textit{regular} if $G(\p)$ acts transitively on the set of flags, and \textit{chiral} if $G(\p)$ induces two orbits on flags so that adjacent flags are on different orbits. In fact, whether $\p$ is regular or chiral, its symmetry group acts transitively on the sets of vertices, edges, faces and cells.
 	
 
 	
 \section{Abstract 4-polytopes}\label{sec:abstract-defs}
-	The theory of abstract polytopes is an essential tool for our work. In this section we state basic results and constructions upon which our demonstrations hold. To avoid using the word 'abstract' in every definition, we use the same words as in the previous section to mean different objects. All polytopes are abstract up to \Cref{subsec:realizations}, where they are precisely distinguished.
+	The theory of abstract polytopes is an essential tool for our work. In this section we state basic results and constructions upon which our proofs are based. To avoid using the word 'abstract' in every definition, we use the same words as in the previous section to mean different objects. All polytopes are abstract up to \Cref{subsec:realizations}, where they are precisely distinguished.
 	
-	An \textit{abstract $4$-polytope} is a partial order $\p$ that satisfies the following properties (P1) to (P4). The elements of $\p$ are called \textit{faces} and maximally ordered subsets (chains) are called \textit{flags}.
+	An \textit{abstract $4$-polytope} is a partial order $\p$ that satisfies the following properties (P1) to (P4). The elements of $\p$ are called \textit{faces} and the maximally ordered subsets (chains) are called \textit{flags}.
 	\begin{enumerate}
-		\item[(P1)]\label{P1} $\p$ contains a least face and a greatest face, denoted respectively by $F_{-1}$ and $F_4$.
+		\item[(P1)]\label{P1} $\p$ contains a minimal face and a greatest face, denoted respectively by $F_{-1}$ and $F_4$.
 		\item[(P2)]\label{P2} Flags contain $6$ elements, including $F_{-1}$ and $F_4$.
 	\end{enumerate}
-	Since every element in a poset is in some chain, we may assign to every face a number from $-1$ to $4$. Such is the \textit{rank function} of $\p$. We say two flags are \textit{$i$-adjacent} if they differ only by a face of rank $i$.
+	Since every element in a poset is in some chain, we may assign to every face a number from $-1$ to $4$. Such is the \textit{rank function} of $\p$. We say that two flags are \textit{$i$-adjacent} if they differ only by a face of rank $i$.
 	\begin{enumerate}
 		\item[(P3)]\label{P3} $\p$ is \textit{strongly flag connected} in the following sense. For any two distinct flags $\Phi$ and $\Psi$ there is a sequence
 		\[\Phi=\Phi_0,\Phi_1,\ldots,\Phi_k=\Psi\]
@@ -224,22 +224,25 @@ A mis queridos tutores Roli e Isabel por transmitirme tanta emoción. A Bris por
 	\end{enumerate}
 	
 		\subsection{Regular and chiral abstract 4-polytopes}
-	Now we study regular 4-polytopes and their automorphism groups. An \textit{automorphism} of $\p$ is a bijection of the polytope that preserves incidence, and we denote automorphism group by $\Gamma(\p)$. $\p$ is called \textit{regular} if $\Gamma(\p)$ is transitive on flags.
+	Now we study regular 4-polytopes and their automorphism groups. An \textit{automorphism} of $\p$ is a bijection of the polytope that preserves incidence, and we denote the automorphism group by $\Gamma(\p)$. $\p$ is called \textit{regular} if $\Gamma(\p)$ is transitive on flags.
 	
-	For a regular polytope $\p$ and some distinguised flag $\Phi$, there exists a unique involutory automorphism $\rho_j$ of $\p$ such that $\Phi\rho_i=\Phi^i$ for $i=0,1,2,3$ (Prop. 2B4, \cite{abstract-polytopes}). These are called the \textit{distinguished generators} of $\Gamma(\p)$ and satisfy that $(\rho_i\rho_j)^{p_{ij}}=\Id$ for $i,j=0,1,2,3$. The numbers $p_i:=p_{i-1}p_i$ form the \textit{Schläfli type} $\{p_1,p_2,p_3\}$ of $\p$.
+	For a regular polytope $\p$ and some distinguised flag $\Phi$, there exists a unique involutory automorphism $\rho_j$ of $\p$ such that $\Phi\rho_i=\Phi^i$ for $i=0,1,2,3$ (Prop. 2B4, \cite{abstract-polytopes}). These are called the \textit{distinguished generators} of $\Gamma(\p)$ and satisfy that 
+	\begin{equation}\label{eq:string-reg}
+			(\rho_i\rho_j)^{p_{ij}}=\Id\text{ when } |i-j|\geq2\
+	\end{equation}
+	for $i,j=0,1,2,3$ (prop. 2B11 \cite{abstract-polytopes}). The numbers $p_i:=p_{i-1}p_i$ form the \textit{Schläfli type} $\{p_1,p_2,p_3\}$ of $\p$. The distinguished generators also satisfy 
+	\begin{equation}\label{eq:int-reg}
+		\langle \rho_i|i\in I\rangle\cap\langle\rho_j|j\in J\rangle=\langle\rho_i\in I\cap J\rangle\qquad\text{for }I,J\subseteq\{0,1,2,3\}
+	\end{equation}
+	which we call the \textit{intersection property} (prop. 2B10 \cite{abstract-polytopes}). Any group $\Gamma$ generated by the involutions $\rho_0$ to $\rho_3$ satisfying \cref{eq:string-reg,eq:int-reg} is called a \textit{C-string group}. We have established that $\Gamma(\p)$ is one such group.
 	
-	In fact, if $\p$ is regular, $\Gamma(\p)$ is a C-string group in the following sense (props. 2B10 and 2B11, \cite{abstract-polytopes}). Let $\Gamma$ be a group generated by the involutions $\rho_0,\rho_1,\rho_2,\rho_3$. We say $\Gamma$ is a \textit{C-string group} if
-	\[(\rho_i\rho_j)^2=\Id\text{ when } |i-j|\geq2\]
-	and it has the \textit{intersection property}, namely
-	\[\langle \rho_i|i\in I\rangle\cap\langle\rho_j|j\in J\rangle=\langle\rho_i\in I\cap J\rangle\qquad\text{for }I,J\subseteq\{1,2,3\}.\]
-
 	Conversely, we may construct a regular abstract $4$-polytope from a C-string group $\Gamma$. Define $\Gamma_j:=\langle\rho_j|i\neq j\rangle$ and $\Gamma_{-1}=\Gamma_4=\Gamma$, and take the set of $i$-faces to be the set of right cosets $\Gamma_i\varphi$ for $\varphi\in\Gamma$. Then there is an order relation with respect to which the set of all faces is a regular $4$-polytope whose automorphism group is $\Gamma$ (thm. 2E11, \cite{abstract-polytopes}).
 	
 	\vspace{.5cm}
 	
 	Now we revise the analogue construction for chiral polytopes. An abstract 4-polytope $\p$ is called \textit{chiral} if $\Gamma(\p)$ induces two orbits on flags and two adjacent flags are in different orbits.
 	
-	First observe that by defining $\sigma_i:=\rho_{i-1}\rho_i$ for the distinguished generators of a regular polytope, it holds that
+	First observe that by defining $\sigma_i:=\rho_{i-1}\rho_i$ for the distinguished generators of a regular polytope with bipartite flags, it holds that
 	\begin{equation}\label{eq:chiral-rels}
 		\begin{aligned}
 			\sigma_1^{p_1}=\sigma_2^{p_2}&=\sigma_3^{p_3}=\Id\\
@@ -253,8 +256,8 @@ A mis queridos tutores Roli e Isabel por transmitirme tanta emoción. A Bris por
 	To construct a chiral or regular abstract polytope from a group we must also require some sort of intersection property. It will suffice that
 	\begin{equation}\label{eq:chiral-int}
 		\begin{aligned}
-			\langle\sigma_1\rangle\cap\langle\sigma_2\rangle=\{\Id\}&=\langle\sigma_2\cap\langle\sigma_3\rangle\\
-			\langle\sigma_1,\sigma_2\rangle\cap\langle\sigma_2,\sigma_3\rangle&=\langle\sigma_2\rangle
+			\langle\sigma_1\rangle\cap\langle\sigma_2\rangle=\{\Id\}&=\langle\sigma_2\rangle\cap\langle\sigma_3\rangle\\
+			\langle\sigma_1,\sigma_2\rangle\cap\langle\sigma_2,&\sigma_3\rangle=\langle\sigma_2\rangle.
 		\end{aligned}
 	\end{equation}
 	Let $\Gamma=\langle \sigma_1,\sigma_2,\sigma_3\rangle$ be a group satisfying both \cref{eq:chiral-rels,eq:chiral-int}. Define
@@ -265,11 +268,11 @@ A mis queridos tutores Roli e Isabel por transmitirme tanta emoción. A Bris por
 		\Gamma^3=\langle \sigma_1,\sigma_2\rangle,\\
 		\text{and}\quad\Gamma_{-1}=\Gamma^4=\Gamma,
 	\end{align*}
-	and take the $i$-faces to be the right cosets $\Gamma_i\varphi$ for $\varphi\in\Gamma$. Again, the set of all faces admits a partial order with respect to which it is chiral or regular abstract 4-polytope $\p$ such that $\Gamma^+(\p)=\Gamma$ (thm. 1 and lem. 11, \cite{schulte-chiral}).
+	and take the $i$-faces to be the right cosets $\Gamma_i\varphi$ for $\varphi\in\Gamma$. Again, the set of all faces admits a partial order with respect to which it is a chiral or a regular abstract 4-polytope $\p$ such that $\Gamma^+(\p)=\Gamma$ (thm. 1 and lem. 11, \cite{schulte-chiral}).
 	
-	In this construction we may distinguish chiral from regular abstract 4-polytopes as follows. $\Gamma^+(\p)$ is of index 2 in $\Gamma(\p)$ if and only if there exists an automorphism $\rho:\Gamma\to \Gamma$ such that
+	In this construction we may distinguish chiral from regular abstract 4-polytopes as follows. $\Gamma^+(\p)$ is of index 2 in $\Gamma(\p)$ if and only if there exists an involutory automorphism $\rho:\Gamma\to \Gamma$ such that
 	\begin{equation}\label{eq:combinatorially-chiral}
-		\rho(\sigma_1)=\sigma_1^{-1},\quad \rho(\sigma_2)=\sigma_1^2\sigma_2\quad\text{and}\quad \rho(\sigma_3)=\sigma_3
+		\rho(\sigma_1)=\sigma_1^{-1},\quad \rho(\sigma_2)=\sigma_1^2\sigma_2\quad\text{and}\quad \rho(\sigma_3)=\sigma_3,
 \end{equation}
 	in which case $\p$ cannot be chiral (thm. 1, \cite{schulte-chiral}).
 
@@ -293,7 +296,7 @@ A mis queridos tutores Roli e Isabel por transmitirme tanta emoción. A Bris por
 	
 	For the regular case, let $\langle R_0, R_1,R_2,R_3\rangle$ be an euclidean representation of the automorphism group of a regular abstract 4-polytope $\p$. Should there be any, define a point $v\in\E^4$ that is fixed by $R_1$, $R_2$ and $R_3$ but not by $R_0$ as the base vertex and take the orbit of $v$ for the geometric vertex-set of a realization. Further, define the base edge $e=v\langle R_0\rangle$, the base face $f=e\langle R_0,R_1\rangle$ and the base cell $c=f\langle R_0,R_1,R_2\rangle$ for a geometric base flag.
 	
-	Now let $\langle S_1,S_2,S_3\rangle$ be a representation of the automorphism group, or rotation subgroup, of a chiral or regular abstract 4-polytope, respectively. For a geometric base vertex choose any point fixed by $S_2$ and $S_3$ but not by $S_1$. The orbit of this point is the geometric vertex-set of a realization. For a geometric flag we define the base edge as $e=v\langle S_1S_2\rangle$, or equivalently, as $e=\{v,vS_1^{-1}\}$ since $S_1^{-1}=R_1R_0$ when $\p$ is regular. Define the base face as $f=e\langle S_1\rangle$ and the base cell as $c=f\langle S_1,S_2\rangle$.
+	Now let $\langle S_1,S_2,S_3\rangle$ be a representation of the automorphism group, or rotation subgroup, of a chiral or regular abstract 4-polytope, respectively. For a geometric base vertex choose any point that is fixed by $S_2$ and $S_3$ but not by $S_1$. The orbit of this point is the geometric vertex-set of a realization. For a geometric flag we define the base edge as $e=v\langle S_1S_2\rangle$, or equivalently, as $e=\{v,vS_1^{-1}\}$ since $S_1^{-1}=R_1R_0$ when $\p$ is regular. Define the base face as $f=e\langle S_1\rangle$ and the base cell as $c=f\langle S_1,S_2\rangle$.
 	
 	While it is true that realizations of 4-polytopes are mere clouds of points, they are no generalization of skeletal polytopes---the segment between vertices is still taken to be flat. Save this technical difference, it is straightforward to check that a regular or chiral skeletal 4-polytope as defined in \Cref{sec:skeletal} is a faithful and symmetric realization of the abstract 4-polytope related to it.
 	
@@ -301,308 +304,96 @@ A mis queridos tutores Roli e Isabel por transmitirme tanta emoción. A Bris por
 	
 	It remains only to formally define star polytopes. Following Section 7D from \cite{abstract-polytopes}, we say a faithfully realized abstract 4-polytope is \textit{classical} if every geometric $i$-face has dimension $i$ (its affine hull is $i$-dimensional). For any such geometric regular polytope, we may write its generating hyperplane reflections as
 	\[R_i=\{x\in\E^4|\langle x,u_i\rangle=0\}\]
-	for some unit vectors $u_i$. Then $\langle u_i,u_j\rangle=0$ for $|i-j|\geq2$, and, since $\langle R_i,R_j\rangle$ is a finite group, there is a rational number $p_i$ such that $\langle u_{i-1},u_i\rangle=\cos(\pi/p_i)$. We define the \textit{Shläfli symbol} of this polytope as $\{p_1,p_2,p_3,p_4\}$ and call it a \textit{star 4-polytope} if any of the $p_i$ is not an integer. Of course, the definition for polyhedra is analogous.
+	for some unit vectors $u_i$. Then $\langle u_i,u_j\rangle=0$ for $|i-j|\geq2$, and, since $\langle R_i,R_j\rangle$ is a finite group, there is a rational number $p_i$ such that $\langle u_{i-1},u_i\rangle=\cos(\pi/p_i)$. We define the \textit{Shläfli type} of this polytope as $\{p_1,p_2,p_3\}$ and call it a \textit{star 4-polytope} if any of the $p_i$ is not an integer. Of course, the definition for polyhedra is analogous.
 
 	\section{A realization of $\left\{\frac{5}{2},3,5\right\}$}
-	\textit{The reader is encouraged to \href{https://github.com/danimalabares/tesina/blob/main/reading.nb}{download} a copy of \texttt{reading.nb} and read through this section in a Mathematica notebook with interactive figures.}
+	Out first chiral polytope will have the same vertices and edges as the star 4-polytope $\left\{\frac{5}{2},3,5\right\}$. We shall start by constructing $\left\{\frac{5}{2},3,5\right\}$ from a given realization of $\{3,3,5\}$. To this end we first express the generating reflections of $\left\{\frac{5}{2},3,5\right\}$ in terms of those of $\{3,3,5\}$. Then we prove they generate a C-string group, which in turn yields an abstract polytope. Finally we show it is realized as $\left\{\frac{5}{2},3,5\right\}$.
 	
-	In this section we construct in a somewhat unexpected way the regular star 4-polytope $\left\{\frac{5}{2},3,5\right\}$, within which we later find a chiral 4-polytope.
+	Our construction is based in the following observations. In the regular star polyhedron $\left\{\frac{5}{2},3\right\}$ the edges intersect at points that are not vertices, and the convex hull of these intersections is a regular icosahedron. The vertex-figure of $\{3,3,5\}$ is also a regular icosahedron. Further, the vertices of $\left\{\frac{5}{2},3,5\right\}$ must be the same as those of $\{3,3,5\}$ (\cite{abstract-polytopes}, p. 212).
 	
-	Our starting point is the regular convex 4-polytope $\{3,3,5\}$. The construction is based on the observation that, in the same way as the false vertices of a pentagram form a pentagon, the false vertices of a great stellated dodecahedron $\left\{\frac{5}{2},3\right\}$ form an icosahedron $\{3,5\}$ (\cref{fig:1}).
+	We are thus inclined to look for a copy of $\left\{\frac{5}{2},3\right\}$ within $\{3,3,5\}$ by taking the vertex-figure icosahedron of some vertex and at each of its faces consider the ajacent tetrahedron that is not contained in the interior of the icosahedron. We may visualize this by stereographically projecting the vertices and taking the convex hull of each tetrahedron as in \cref{fig:fig1}.
 	
-	\begin{figure}[H]
-		\begin{center}
-			\begin{subfigure}[t]{0.4\linewidth}
-		\centering
-		\includegraphics[width=\linewidth]{fig1a}
-		\caption{In $\left\{\frac{5}{2}\right\}$.}
-		\end{subfigure}
-		\begin{subfigure}[t]{0.4\linewidth}
-			\centering
-			\includegraphics[width=\linewidth]{fig1b}
-			\caption{In $\left\{\frac{5}{2},3\right\}$.}
-		\end{subfigure}
-		\end{center}
-		\caption{Polytopes of false vertices.}\label{fig:1}
+	\begin{figure}[h]
+	\centering
+	\includegraphics[width=0.7\linewidth]{fig1}
+	\caption{The base cell of $\left\{\frac{5}{2},3,5\right\}$.}
+	\label{fig:fig1}
 	\end{figure}
 	
-	This icosahedron is thought to be the vertex figure of some vertex in $\{3,3,5\}$, so that its center and its vertices represent some vertices of $\{3,3,5\}$. We choose a base flag for this icosahedron, which determines the generating reflections $R_0$ to $R_3$ of its symmetry group. Then we choose a base flag in the surrounding $\left\{\frac{5}{2},3\right\}$, which determines reflections $P_0$ to $P_3$. We show how to express the $P_i$ in terms of the $R_i$. Acting with the group generated by the $P_i$ on the base flag of  $\left\{\frac{5}{2},3\right\}$ yields $\left\{\frac{5}{2},3,5\right\}$.
+	Notice that an edge of $\left\{\frac{5}{2},3\right\}$ is composed of three edges of $\{3,3,5\}$. Choosing a geometric flag for $\left\{\frac{5}{2},3,5\right\}$ ammounts to selecting an incident vertex, edge and face within this figure, which is the base cell.  We define the generating reflections of the symmetry group of $\left\{\frac{5}{2},3,5\right\}$ with respect to the base flag as follows. Call the base vertex $w_0$, the centroid of the base edge  $w_1$, the centroid of the base face  $w_2$ and the centroid of the base cell  $w_3$. The mirror of the reflection $P_i$ is the hyperplane through the origin and the $w_j$ such that $j\neq i$.
 	
-	\subsection{3-dimensional analogue}
-	
-	For better understanding, we start by presenting the 3-dimensional analogue of our argument. Take the pentagon of false-vertices of the pentagram to be the vertex-figure of some vertex in a regular icosahedron $\{3,5\}$, and choose a base flag for the icosahedron. We represent such flag by the \textit{basic tetrahedron} given by the base vertex and the centroids of the base edge, the base face and the icosahedron (\cref{fig:2b}). To it corresponds a triangle shown in \cref{fig:2a}.
-	
-	\begin{figure}[H]
-		\begin{center}
-			\begin{subfigure}{0.4\linewidth}
-				\centering
-				\includegraphics[width=\linewidth]{fig2a}
-				\caption{Seen in $\left\{\frac{5}{2}\right\}$}\label{fig:2a}
-			\end{subfigure}
-			\begin{subfigure}{0.4\linewidth}
-				\centering
-				\includegraphics[width=\linewidth]{fig2b}
-				\caption{Seen in $\{3,5\}$}\label{fig:2b}
-			\end{subfigure}
-		\end{center}
-		\caption{Base flag of $\{3,5\}$.}\label{fig:2}
-	\end{figure}
-	
-	We denote reflections and their mirrors with the same symbol. Let $R_i$ for $i=0,1,2$ be reflections on the sides of the triangle in \cref{fig:2a} in the following way: $R_0$ goes through the blue and green vertex, $R_1$ through the red and blue, and $R_2$ through the red and green. Notice these lines correspond to planes through the origin in \cref{fig:2b}, so that the $R_i$ may be thought as plane reflections.
-	
-	Now choose a flag for the pentagram in the 2-dimensional picture as represented in \cref{fig:3a}.
-	
-	\begin{figure}[H]
-		\begin{center}
-			\begin{subfigure}{0.4\linewidth}
-				\centering
-				\includegraphics[width=\linewidth]{fig3a}
-				\caption{Seen in $\left\{\frac{5}{2}\right\}$}\label{fig:3a}
-			\end{subfigure}
-			\begin{subfigure}{0.4\linewidth}
-				\centering
-				\includegraphics[width=\linewidth]{fig3b}
-				\caption{Seen in $\{3,5\}$}\label{fig:3b}
-			\end{subfigure}
-		\end{center}
-		\caption{Base flag of $\left\{\frac{5}{2}\right\}$.}\label{fig:3}
-	\end{figure}
-	
-	We define the reflections $P_i$ in terms of the $R_i$ as follows:
-	
-	\[P_0=R_0,\qquad P_1=R_1R_2R_1R_0R_1R_2R_1\qquad\text{and}\qquad P_2=R_2.\]
-	
-	$P_1$ is just $R_0$ conjugated by the reflection through the vertical line in the center of the picture.
-	
-	If the group $\langle P_0,P_1,P_2\rangle$ is a C-string group, then it is an abstract polytope, and finding a geometric flag by Wythoff's construction amounts to finding a vertex fixed by $P_1$ and $P_2$ but not by $P_0$. For the natural choice of base vertex in our construction, we obtain the base flag shown in \cref{fig:3b}.
-	
-	Like before, we may think the $P_i$ are plane reflections. Acting with the group generated by the $P_i$ on this flag produces $\left\{\frac{5}{2},5\right\}$, a regular star polyhedron with the same vertex-set as the icosahedron (\cref{fig:4}).
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=.35\linewidth]{fig4}
-		\caption{$\left\{\frac{5}{2},5\right\}$.}\label{fig:4}
-	\end{figure}
-	
-	
-	\subsection{Construction of $\left\{\frac{5}{2},3,5\right\}$ from $\{3,3,5\}$}
-	
-	Now we take the icosahedron of false vertices within $\left\{\frac{5}{2},3\right\}$ to be the vertex-figure of some vertex in $\{3,3,5\}$, and we choose a base flag for $\{3,3,5\}$. Recall the cells of $\{3,3,5\}$ are tetrahedra, and notice our choice of base flag does not contain the vertex of which $\{3,5\}$ is thought to be the vertex-figure (\cref{fig:5a,fig:5b}).
-
-	\begin{figure}[H]
-		\begin{center}
-			\begin{subfigure}{0.49\linewidth}
-				\centering
-				\includegraphics[width=0.9\linewidth]{fig5a}
-				\caption{In $\{3,5\}$.}\label{fig:5a}
-			\end{subfigure}
-			\begin{subfigure}{0.49\linewidth}
-				\centering
-				\includegraphics[width=0.9\linewidth]{fig5b}
-				\caption{In the base cell.}\label{fig:5b}
-			\end{subfigure}
-		\end{center}
-		\caption{Base flag of $\{3,3,5\}$.}\label{fig:5}
-	\end{figure}
-	Next we choose a base flag for $\left\{\frac{5}{2},3\right\}$ (\cref{fig:6a,fig:6b}).
-	
-		\begin{figure}[H]
-		\begin{center}
-			\begin{subfigure}{.8\linewidth}
-				\centering
-				\includegraphics[width=0.9\linewidth]{fig6a}
-				\subcaption{In the base cell of $\{3,3,5\}$.}\label{fig:6a}
-			\end{subfigure}
-			\caption{Base flags of $\{3,3,5\}$ and $\left\{\frac{5}{2},3\right\}$.}
-		\end{center}
-		\end{figure}
-
-	
-		\begin{figure}[H]\ContinuedFloat
-		\begin{center}
-			\begin{subfigure}{0.8\linewidth}
-				\centering
-				\includegraphics[width=0.9\linewidth]{fig6b}
-				\subcaption{In $\left\{\frac{5}{2},3\right\}$. Edges in the base face of $\left\{\frac{5}{2},3\right\}$ are highlighted.}\label{fig:6b}
-			\end{subfigure}
-		\end{center}
-		\caption{Base flags of $\{3,3,5\}$ and $\left\{\frac{5}{2},3\right\}$.}
-	\end{figure}
-%	\begin{figure}[H]
-%		\centering
-%		\includegraphics[width=.45\linewidth]{fig6}
-%		\caption{Base flags of $\{3,3,5\}$ and $\left\{\frac{5}{2},3\right\}$.}\label{fig:6}
-%	\end{figure}
-	
-	We may define the generating reflections of the symmetry group of $\{3,3,5\}$ using its base flag as follows. Define the red vertex as $v_0$, the blue $v_1$, the green $v_2$ and the yellow $v_3$. The mirror of the reflection $R_i$ is the plane through all but $v_i$ (as an example we show $R_0$ in \cref{fig:7}).
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=.3\linewidth]{fig7}
-		\caption{$R_0$.}\label{fig:7}
-	\end{figure}
-	
-	Recall we think of these as hyperplane reflections, each determined by three vertices in the base flag and the origin in 4-space.
-	
-	Now we may define the generatig reflections for the symmetry group of $\left\{\frac{5}{2},3,5\right\}$ in terms of the $R_i$ (\cref{fig:8}).
-	
-	\begin{figure}[H]
-	\begin{center}
-		\begin{subfigure}{\linewidth}
-				\centering
-				\includegraphics[width=0.95\linewidth]{fig8a}
-				\caption{$P_0=R_0$.}\label{fig:8a}
-		\end{subfigure}
-		
-		\begin{subfigure}{\linewidth}
-			\centering
-			\includegraphics[width=0.95\linewidth]{fig8b}
-			\caption{$P_1=R_1R_2R_3R_2R_1R_0R_1R_2R_3R_2R_1$.}\label{fig:8b}
-		\end{subfigure}
-		
-		\begin{subfigure}{\linewidth}
-				\centering
-				\includegraphics[width=0.95\linewidth]{fig8c}
-				\caption{$P_2=R_3$.}\label{fig:8c}
-		\end{subfigure}
-		
-		\begin{subfigure}{\linewidth}
-			\centering
-			\includegraphics[width=0.95\linewidth]{fig8d}
-			\caption{$P_3=R_2$.}\label{fig:8d}
-		\end{subfigure}
-		\end{center}
-		\caption{The $P_i$ in terms of the $R_i$.}\label{fig:8}
-	\end{figure}
-	
-	$P_1$ is just $R_0$ conjugated by $R_1R_2R_3R_2R_1$ (\cref{fig:9a,fig:9b}).
-	
-	\begin{figure}[H]
-	\begin{center}
-		\begin{subfigure}{\linewidth}
-			\centering
-			\includegraphics[width=0.5\linewidth]{fig9a}
-			\caption{$R_0$ conjugated by $R_1R_2R_3R_2R_1$.}\label{fig:9a}
-		\end{subfigure}
-		\begin{subfigure}{\linewidth}
-			\centering
-			\includegraphics[width=0.9\linewidth]{fig9b}
-			\caption{Showing the base flag of $\left\{\frac{5}{2},3\right\}$.}\label{fig:9b}
-		\end{subfigure}
-		\end{center}
-		\caption{$P_1$.}
-		\end{figure}
-	
-	It has been confirmed in \texttt{abstract.txt} that $\langle P_0,P_1,P_2,P_3\rangle$ is a C-string group (see \Cref{app:1}). Specifically,
+	There is a choice of base flag for $\{3,3,5\}$ for which the generating reflections $R_0$ to $R_3$ result the following relations, that we shall use as definitions:
+	\begin{gather*}
+		P_0=R_0,\qquad P_2=R_3,\qquad P_3=R_2\\
+		P_1=R_1R_2R_3R_2R_1R_0R_1R_2R_3R_2R_1
+	\end{gather*}
+	To construct a realization of $\left\{\frac{5}{2},3,5\right\}$ we first suppose that $R_0$ to $R_3$ are the distinguished generators of the abstract polytope $\{3,3,5\}$. That is, they satisfy the relations
+	\[R_i^2=(R_0R_1)^3=(R_1R_2)^3=(R_2R_3)^5=(R_0R_2)^2=(R_0R_3)^2=(R_1R_3)^2=\Id\]
+	for all $i$ and the intersection property. It has been confirmed that
 		\[P_i^2=(P_0P_1)^5=(P_1P_2)^3=(P_2P_3)^5=(P_0P_2)^2=(P_0P_3)^2=(P_1P_3)^2=\Id\]
-	for all $i$, and the intersection property holds (see \texttt{int-prop.txt}).
+	for all $i$, and that the intersection property holds (see \Cref{app:1}). Then the abstract polytope generated by $P_0$ to $P_3$ is $\{5,3,5\}$.
 	
-
-	To produce a realization we must find a vertex fixed by $P_1$, $P_2$ and $P_3$ but not by $P_0$. The natural choice is shown in \cref{fig:10}, and it is defined as follows. First we take $v_0$ to the opposite vertex of the base face in the base tetrahedron using $R_0R_1R_2$. Next we rotate twice about the base edge conjugated by $R_1R_2R_3R_2R_1$.
+	Using a particular realization of $\{3,3,5\}$, we may explicitly find the base vertex for $\left\{\frac{5}{2},3,5\right\}$ (see \Cref{app:coords}). Then Wythoff's construction yields a realization that we expect to be faithful and symmetric. Faithfullness follows by comparing the number of $i$-faces of the abstract polytope and the realization (see \Cref{app:1,app:2}). Symmetry follows from the fact the vertex-set of both $\{3,3,5\}$ and $\left\{\frac{5}{2},3,5\right\}$ is the same.
 	
-		\begin{figure}[H]
-		\begin{center}
-			\begin{subfigure}{\linewidth}
-				\centering
-				\includegraphics[width=0.8\linewidth]{fig10a}
-				\caption{As we've been picturing it.}\label{fig:10a}
-			\end{subfigure}
-			\begin{subfigure}{\linewidth}
-				\centering
-				\includegraphics[width=0.7\linewidth]{fig10b}
-				\caption{Stereographic projection.}\label{fig:10b}
-			\end{subfigure}
-		\end{center}
-		\caption{The base vertex of $\left\{\frac{5}{2},3,5\right\}$.}\label{fig:10}
-	\end{figure}
+	Since the $R_i$ are hyperplane reflections, we have a classical polytope as defined in \Cref{subsec:realizations} (see \cite{mcmullen-4dimensional}). The only such polytopes in $\mathbb{E}^4$ arising from the abstract regular polytope $\{5,3,5\}$ are the star 4-polytopes $\left\{\frac{5}{2},3,5\right\}$ and $\left\{5,3,\frac{5}{2}\right\}$ (thm. 7D13 \cite{abstract-polytopes}). However, the rotation about the edge in this polytope is the reverse of that of $\{3,3,5\}$, so that it cannot be of type $\frac{5}{2}$. This completes the proof that we have constructed $\left\{\frac{5}{2},3,5\right\}$.
 	
-	So let
-		\begin{equation}\label{eq:w0}
-			w_0:=v_0R_0R_1R_2\cdot R_1R_2R_3R_2R_1\cdot  R_3R_2R_3R_2\cdot R_1R_2R_3R_2R_1,
-		\end{equation}
-	(we use dots to facilitate lecture), which is, in effect, fixed by all $P_i$ but $P_0$ (see \texttt{geometric.txt}, \Cref{app:2}). We have also shown that $\langle R_0,R_1,R_2,R_3\rangle=\langle P_0,P_1,P_2,P_3\rangle$, so that the vertex-set in both structures is the same (this equality also follows from thm. 7D13, \cite{abstract-polytopes}). It follows that the realization is symmetric. Faithfulness was proved by comparing the number of $i$-faces in \texttt{abstract.txt} and \texttt{geometric.txt}.
-	
-	Since the $R_i$ are hyperplane reflections, we have a classical polytope as defined in \Cref{subsec:realizations} (see \cite{mcmullen-4dimensional}). The only such polytopes in $\mathbb{E}^4$ arising from the regular abstract polytope$\{5,3,5\}$ are the star 4-polytopes $\left\{\frac{5}{2},3,5\right\}$ and $\left\{5,3,\frac{5}{2}\right\}$ (thm. 7D13 \cite{abstract-polytopes}). However, the rotation about the edge in this polytope is the reverse of that of $\{3,3,5\}$, so it cannot be of type $\frac{5}{2}$. This completes the proof that we have constructed $\left\{\frac{5}{2},3,5\right\}$.
-	
-	\begin{figure}[H]
-		\begin{center}
-			\begin{subfigure}{\linewidth}
-				\centering
-				\includegraphics[width=0.5\linewidth]{fig11a}
-				\caption{The base face.}\label{fig:11a}
-			\end{subfigure}
-			\begin{subfigure}{\linewidth}
-				\centering
-				\includegraphics[width=0.7\linewidth]{fig11b}
-				\caption{The base cell.}\label{fig:11b}
-			\end{subfigure}
-		\end{center}
-		\caption{Stereographic projections of  $\left\{\frac{5}{2},3,5\right\}$.}\label{fig:11}
-	\end{figure}
-
 	\section{A chiral 4-polytope from $\left\{\frac{5}{2},3,5\right\}$}
-	To construct a chiral 4-polytope we must define the generating rotations. From the given realization of $\left\{\frac{5}{2},3,5\right\}$, let
+	To construct a chiral 4-polytope within $\left\{\frac{5}{2},3,5\right\}$, let
 		\[S_1=P_0P_1P_3P_2,\qquad S_2=P_2P_1,\quad\text{and}\quad S_3=P_3P_2.\]
-	It is shown in \texttt{abstract.txt} that
-		\[S_1^{12}=S_2^3=S_3^5=(S_1S_2)^2=(S_1S_2S_3)^2=(S_2S_3)^2=\Id\]
-	and that the intersection property holds, so that the group may be thought as a regular or chiral abstract polytope. For a realization by Wythoff's construction define the base vertex to be the same $w_0$ that was used for $\left\{\frac{5}{2},3,5\right\}$. Since the base vertex is the same for both structures, and the group $\langle S_1,S_2,S_3\rangle$ is a subgroup of $\langle P_0,P_1,P_2,P_3\rangle$, it follows that the realization is symmetric. Again, by comparing the number of $i$-faces in \texttt{abstract.txt} and \texttt{geometric.txt} our realization is seen to be faithful.
+	Then
+	\begin{equation}\label{eq:string-chiral}
+		S_1^{12}=S_2^3=S_3^5=(S_1S_2)^2=(S_1S_2S_3)^2=(S_2S_3)^2=\Id
+	\end{equation}
+	and \cref{eq:chiral-int} holds (see \Cref{app:1}). It follows that the group generated by $S_1$ to $S_3$ yields either a regular or a chiral abstract polytope.
 	
-	The choices of $S_1$ and $S_2$ are as in  \cite{petcox}, so that the cells are copies of the chiral polyhedron denoted as $H_1(\left\{5,3,\frac{5}{2}\right\})$. In fact, chirality in our 4-polytope follows from the chirality of the cells, since any symmetry sending a flag to its $i$-th adjacent is also a symmetry of the cell.
+	For a realization by Wythoff's construction define the base vertex to be the same as the one that was used for $\left\{\frac{5}{2},3,5\right\}$. Such a choice and the fact that the group $\langle S_1,S_2,S_3\rangle$ a subgroup of $\langle P_0,P_1,P_2,P_3\rangle$ make the realization symmetric. Again, by comparing the number of $i$-faces in the abstract and geometric polytopes, our realization is seen to be faithful.
 	
-	In \texttt{geometric.txt} we have shown this structure to have 120 vertices, 720 edges, 300 faces and 50 cells. The first two numbers are the same for the regular $\left\{\frac{5}{2},3,5\right\}$, meaning the vertex and edge-sets are the same for both polytopes. Every face has 12 vertices and edges arranged in helical fashion as shown in \cite{petcox} (see \cref{fig:12}). In virtue of such arrangement we denote this polytope by $\left\{\frac{12}{1,5},3,5\right\}$.
+	The definitions of $S_1$ and $S_2$ are as in  \cite{petcox}, so that the cells are copies of the chiral polyhedron denoted as $H_1(\left\{5,3,\frac{5}{2}\right\})$. In fact, chirality in our 4-polytope follows from the chirality of the cells, since any symmetry sending a flag to its $i$-th adjacent is also a symmetry of the cell.
+	
+	We have shown this structure to have 120 vertices, 720 edges, 300 faces and 50 cells. Every face has 12 vertices and edges arranged in helical fashion as shown in \cite{petcox} (see \cref{fig:12}). In virtue of such arrangement we denote this polytope by $\left\{\frac{12}{1,5},3,5\right\}$.
 	
 	
-	We now show this structure satisfies \textit{(i)-(iv)} in our definition of 4-polytope. By the realization being faithful and symmetric, conditions \textit{(i)} and \textit{(ii)} follow from (P4) and (P3), respectively.
+	We now show this structure satisfies \textit{(i)-(iv)} in our definition of skeletal 4-polytope. By the realization being faithful and symmetric, conditions \textit{(i)} and \textit{(ii)} follow from (P4) and (P3), respectively. For \textit{(iii)} notice the vertex figures are icosahedra, which follows from Wythoff's construction on any vertex adjacent to the base vertex by the group $\langle S_2,S_3\rangle$. Finally, \textit{(iv)} is immediate from the finiteness of the group. This concludes the proof that we have constructed a chiral 4-polytope.
 	
-	We may also show \textit{(i)} in a slightly more geometric way. It has been shown in  \texttt{geometric.txt} that for the base face $f$,
-	\begin{equation*}\label{ec:stab-face}
-		\Stab_{\langle S_1,S_2,S_3\rangle}(f)=\langle S_1,S_2S_3\rangle,
-	\end{equation*}
-	which implies that every face belongs to exactly two cells. In fact, since $S_1$ fixes the base cell and $S_2S_3$ an involution, if any cell has $f$ as a face, we may map it to the base cell by a transformation fixing $f$.
+%	We may also show \textit{(i)} in a slightly more geometric way. It has been shown in  \texttt{geometric.txt} that for the base face $f$,
+%	\begin{equation*}\label{ec:stab-face}
+%		\Stab_{\langle S_1,S_2,S_3\rangle}(f)=\langle S_1,S_2S_3\rangle,
+%	\end{equation*}
+%	which implies that every face belongs to exactly two cells. In fact, since $S_1$ fixes the base cell and $S_2S_3$ an involution, if any cell has $f$ as a face, we may map it to the base cell by a transformation fixing $f$.
 	
-	 For \textit{(iii)} notice the vertex figures are icosahedra. This follows from Wythoff's construction on any vertex adjacent to the base vertex by the group $\langle S_2,S_3\rangle$. Finally, \textit{(iv)} is immediate from the finiteness of the group. This concludes the proof that we have produced a chiral 4-polytope.
-	
-	Further, it was found in \texttt{abstract.txt} that there exists no automorphism $\rho$ of the group generated by the $S_i$ that satisfies \cref{eq:combinatorially-chiral}, so that the abstract polytope associated to $\left\{\frac{12}{1,5},3,5\right\}$ is still chiral.
+	Further, it was found that there exists no automorphism $\rho$ of the group generated by the $S_i$ that satisfies \cref{eq:combinatorially-chiral}, so that the abstract polytope associated to $\left\{\frac{12}{1,5},3,5\right\}$ is combinatorially chiral (see \Cref{app:1}).
 	
 	
 
 \begin{figure}[H]
 	\begin{center}
-%		\begin{subfigure}{\linewidth}
 			\centering
-			\includegraphics[width=1\linewidth]{fig12a}
-%			\caption{The base face. We also show the base face and flag of $\left\{\frac{5}{2},3,5\right\}$}\label{fig:12a}
-%		\end{subfigure}
-%		\begin{subfigure}{\linewidth}
-%			\centering
-%			\includegraphics[width=0.5\linewidth]{fig12b}
-%			\caption{Five faces at the edge. We show part of the surface spanned between the edge and the axis of twist in every face.}\label{fig:12b}
-%		\end{subfigure}
+			\includegraphics[width=1\linewidth]{fig2}
+			\caption{Stereographic projection of the base face of  $\left\{\frac{12}{1,5},3,5\right\}$. We also show the base face of $\left\{\frac{5}{2},3,5\right\}$}\label{fig:12}
 	\end{center}
-	\caption{Stereographic projection of the base face of  $\left\{\frac{12}{1,5},3,5\right\}$. We also show the base face and flag of $\left\{\frac{5}{2},3,5\right\}$}\label{fig:12}
 \end{figure}
 
 	
 	\section{A chiral 4-polytope from $\left\{5,3,\frac{5}{2}\right\}$}
-	For the dual star polytope $\left\{5,3,\frac{5}{2}\right\}$ we simple define
+	For the dual star polytope $\left\{5,3,\frac{5}{2}\right\}$ we simply define
 	\[Q_0=P_3,\qquad Q_1=P_2\qquad Q_2=P_3,\quad\text{and}\quad Q_3=P_0\]
-	and apply Wythoff's construction on the centroid of the base cell of the $\left\{\frac{5}{2},3,5\right\}$. The coordinates of this point were computed in \texttt{geometric-dual.txt}.
+	and apply Wythoff's construction on the centroid of the base cell of $\left\{\frac{5}{2},3,5\right\}$. This yields a realization of $\left\{5,3,\frac{5}{2}\right\}$.
 	
-	Analogue definitions to those of the $S_i$ produce another chiral 4-polytope with the same properties as the former; namely, number of vertices, edges, faces and cells, and combinatorial chirality. Every step of the construction was confirmed in \texttt{abstract-dual.txt} and \texttt{geometric-dual.txt} (and \texttt{int-prop-dual.txt}).
+	Analogue definitions for the $S_i$ as in the last section also satisfy \cref{eq:string-chiral} and \cref{eq:chiral-int}, so that we have another abstract 4-polytope that is, in fact, the same as the (abstract) one constructed before.
 	
-	In this case, the cells are copies of $H_0(\left\{5,3,\frac{5}{2}\right\})$ from \cite{petcox}. We call it $\left\{\frac{12}{1,5},3,\frac{5}{2}\right\}$.
+	Wythoff's construction on the base vertex then yields a symmetric and faithful realization of a chiral 4-polytope whose cells are copies of $H_0(\left\{5,3,\frac{5}{2}\right\})$ from \cite{petcox}. We call it $\left\{\frac{12}{1,5},3,\frac{5}{2}\right\}$.
 	
 \begin{figure}[H]
 	\begin{center}
 		\begin{subfigure}{\linewidth}
 			\centering
-			\includegraphics[width=0.7\linewidth]{fig13a}
-			\caption{The base face. We also show the base face and flag of $\left\{5,3,\frac{5}{2}\right\}$}\label{fig:13a}
+			\includegraphics[width=0.8\linewidth]{fig3a}
+			\caption{The base face. We also show the base face of $\left\{5,3,\frac{5}{2}\right\}$}\label{fig:13a}
 		\end{subfigure}
 		\begin{subfigure}{\linewidth}
 			\centering
-			\includegraphics[width=0.5\linewidth]{fig12b}
-			\caption{Five faces at the edge. We show part of the surface spanned between the edge and the axis of twist in every face.}\label{fig:13b}
+			\includegraphics[width=0.5\linewidth]{fig3b}
+			\caption{Five faces at the edge. We show part of the surface spanned between the edge and the axis of the twist in every face.}\label{fig:13b}
 		\end{subfigure}
 	\end{center}
 	\caption{Stereographic projections of  $\left\{\frac{12}{1,5},3,\frac{5}{2}\right\}$.}\label{fig:13}
@@ -610,9 +401,12 @@ A mis queridos tutores Roli e Isabel por transmitirme tanta emoción. A Bris por
 
 \clearpage
 \begin{appendices}
+\crefalias{section}{appendix}
 \crefalias{subsection}{appendix}
-\section{GAP programs}
-In the following sections we show the output of the files \texttt{abstract.txt} and \texttt{geometric.txt} as executed in GAP. The original code for these and other programs used in this thesis may be consulted \href{https://github.com/danimalabares/tesina}{here}.
+\section{}\label{app:A}
+The original code for the programs used in this thesis may be consulted at \linebreak \href{https://github.com/dan-gc/tesina}{github.com/dan-gc/tesina}.
+
+In the following two sections we show the output of the files \texttt{abstract.txt} and \texttt{geometric.txt} as executed in GAP, in which the abstract and geometric polytopes associated to $\left\{\frac{5}{2},3,5\right\}$ are constructed. The intersection property of $\left\{\frac{5}{2},3,5\right\}$ was confirmed in another program named \texttt{int-prop.txt}, and the constructions regarding $\left\{5,3,\frac{5}{2}\right\}$ are found in analogue programs tagged with the word \texttt{dual}. 
 
 \subsection{\texttt{abstract.txt}}\label{app:1}
 
@@ -679,8 +473,9 @@ In the following sections we show the output of the files \texttt{abstract.txt} 
 	Faces in the cell: 12
 	Faces in the polytope: 300
 	Cells in the polytope: 50
-	
-	
+		\end{lstlisting}
+\vfill\null\columnbreak
+\begin{lstlisting}
 	-------------------------------
 	STRING RELATIONS OF CHIRAL
 	
@@ -778,10 +573,6 @@ In the following sections we show the output of the files \texttt{abstract.txt} 
 	Faces in the polytope: 720
 	Cells in the polytope: 120
 	
-	\end{lstlisting}
-	\vfill\null\columnbreak
-	\begin{lstlisting}
-	
 	Chiral
 	
 	Vertices in the face: 12
@@ -833,40 +624,44 @@ In the following sections we show the output of the files \texttt{abstract.txt} 
 \end{multicols}
 \end{changemargin}
 \vspace{-1cm}
-\section{Coordinates of geometric realizations}\label{sec:figs}
-We show the coordinates as computed in \texttt{Section-5C.nb}. Let $\phi$ be the golden ratio. As in \cite{petcox}, for the basic tetrahedron of $\{3,3,5\}$
-\[v_0=(1, 0, 0, 0),\quad v_1=\left(\phi+2,1,0,\frac{1}{\phi }\right), \quad v_2=\left(\phi,\frac{1}{\phi },0,0\right),\quad v_3=\left(\phi ^2,1,-\frac{1}{\phi ^2},0\right)\]
-we obtain the coordinates of the base vertex of $\left\{\frac{5}{2},3,5\right\}$
-\[w_0=\left(\frac{\phi }{2}, -\frac{1}{2}, 0, -\frac{1}{2 \phi }\right)\]
-by defining it in as in \cref{eq:w0}. The $S_i$ for $\left\{\frac{5}{2},3,5\right\}$ have coordinates
-\[
-	S_1=\frac{1}{2}\left(
-	\begin{array}{cccc}
-		1 & 1 & 1 & -1 \\
-		\phi  & -1 & 0 & \frac{1}{\phi } \\
-		-\frac{1}{\phi } & -1 & \phi  & 0 \\
-		0 & -1 & -\frac{1}{\phi } & -\phi  \\
-	\end{array}	\right),
-	\qquad S_2=\frac{1}{2}\left(
-	\begin{array}{cccc}
-		\phi  & 0 & -\frac{1}{\phi } & -1 \\
-		0 & 2 & 0 & 0 \\
-		\frac{1}{\phi } & 0 & -1 & \phi  \\
-		-1 & 0 & -\phi  & -\phi{1}{\ } \\
-	\end{array}
-	\right),
-\]\[
-	S_3=\frac{1}{2}\left(
-	\begin{array}{cccc}
-		2 & 0 & 0 & 0 \\
-		0 & \phi  & 1 & \frac{1}{\phi } \\
-		0 & -1 & \frac{1}{\phi } & \phi  \\
-		0 & \frac{1}{\phi } & -\phi  & 1 \\
-	\end{array}
-	\right)
-\]
 
+\section{}\label{app:coords}
+%We show the coordinates as computed in \texttt{Section-5C.nb}. 
+In this appendix we show the coordinates of geometric realizations. Let $\phi$ be the golden ratio. As in \cite{petcox}, take the base flag of $\{3,3,5\}$ given by the centroids of the base vertex, edge, face and cell by
+\[v_0=(1, 0, 0, 0),\quad v_1=\left(\phi+2,1,0,\frac{1}{\phi }\right), \quad v_2=\left(\phi,\frac{1}{\phi },0,0\right),\quad v_3=\left(\phi ^2,1,-\frac{1}{\phi ^2},0\right),\]
+respectively. Then the coordinates of the base vertex of $\left\{\frac{5}{2},3,5\right\}$ are
+\[w_0=\left(\frac{\phi }{2}, -\frac{1}{2}, 0, -\frac{1}{2 \phi }\right).\]
+according to $w_0=v_0R_0R_1R_2R_1R_2R_3R_2R_1 R_3R_2R_3R_2R_1R_2R_3R_2R_1$, which was found geometrically (see \texttt{52-3-5.nb} for a detailed account). The centroid of the base cell (and hence the base vertex of the dual $\left\{5,3,\frac{5}{2}\right\}$) has coordinates
+\[w_3=\left(\frac{\phi }{4}, \frac{1}{4}, 0,-\frac{1}{4 \phi }\right).\]
+%The $S_i$ for $\left\{\frac{5}{2},3,5\right\}$ have coordinates
+%\[
+%	S_1=\frac{1}{2}\left(
+%	\begin{array}{cccc}
+%		1 & 1 & 1 & -1 \\
+%		\phi  & -1 & 0 & \frac{1}{\phi } \\
+%		-\frac{1}{\phi } & -1 & \phi  & 0 \\
+%		0 & -1 & -\frac{1}{\phi } & -\phi  \\
+%	\end{array}	\right),
+%	\qquad S_2=\frac{1}{2}\left(
+%	\begin{array}{cccc}
+%		\phi  & 0 & -\frac{1}{\phi } & -1 \\
+%		0 & 2 & 0 & 0 \\
+%		\frac{1}{\phi } & 0 & -1 & \phi  \\
+%		-1 & 0 & -\phi  & -\phi{1}{\ } \\
+%	\end{array}
+%	\right),
+%\]\[
+%	S_3=\frac{1}{2}\left(
+%	\begin{array}{cccc}
+%		2 & 0 & 0 & 0 \\
+%		0 & \phi  & 1 & \frac{1}{\phi } \\
+%		0 & -1 & \frac{1}{\phi } & \phi  \\
+%		0 & \frac{1}{\phi } & -\phi  & 1 \\
+%	\end{array}
+%	\right)
+%\]
 \end{appendices}
+
 \section*{Bibliography}
 \addcontentsline{toc}{section}{Bibliography}
 

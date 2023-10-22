@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.1)  14 OCT 2023 09:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.6.1)  22 OCT 2023 10:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -849,7 +849,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip62
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 40.
+Package hyperref Info: Option `colorlinks' set `true' on input line 39.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/cleveref/cleveref.sty
 Package: cleveref 2018/03/27 v0.21.4 Intelligent cross-referencing
 Package cleveref Info: `hyperref' support loaded on input line 2370.
@@ -946,7 +946,7 @@ Package biblatex Info: ... file 'blx-dm.def' found.
 File: blx-dm.def 2023/03/05 v3.19 biblatex localization (PK/MW)
 )
 Package biblatex Info: Trying to load biblatex style data model...
-Package biblatex Info: ... file 'nature.dbx' not found.
+Package biblatex Info: ... file 'numeric-comp.dbx' not found.
 Package biblatex Info: Trying to load biblatex custom data model...
 Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
 \c@afterword=\count389
@@ -1066,11 +1066,14 @@ File: biblatex.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
 \biburllcskip=\muskip21
 \c@smartand=\count465
 )
-Package biblatex Info: Trying to load bibliography style 'nature'...
-Package biblatex Info: ... file 'nature.bbx' found.
+Package biblatex Info: Trying to load natbib compatibility...
+Package biblatex Info: ... file 'blx-natbib.def' found.
 
-(/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex-nature/nature.bbx
-File: nature.bbx 2020/12/30 v1.3d biblatex bibliography style
+(/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex/blx-natbib.def
+File: blx-natbib.def 2023/03/05 v3.19 biblatex compatibility (PK/MW)
+Package biblatex Info: Delimiter 'nameyeardelim' in context '' already defined,
+ overwriting.
+)
 Package biblatex Info: Trying to load bibliography style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.bbx' found.
 
@@ -1088,12 +1091,7 @@ Package biblatex Info: ... file 'standard.bbx' found.
 File: standard.bbx 2023/03/05 v3.19 biblatex bibliography style (PK/MW)
 \c@bbx:relatedcount=\count466
 \c@bbx:relatedtotal=\count467
-))))
-Package biblatex Info: Trying to load citation style 'nature'...
-Package biblatex Info: ... file 'nature.cbx' found.
-
-(/usr/local/texlive/2023/texmf-dist/tex/latex/biblatex-nature/nature.cbx
-File: nature.cbx 2020/12/30 v1.3d biblatex citation style
+)))
 Package biblatex Info: Trying to load citation style 'numeric-comp'...
 Package biblatex Info: ... file 'numeric-comp.cbx' found.
 
@@ -1114,7 +1112,7 @@ Package biblatex Info: Redefining '\textcites'.
 Package biblatex Info: Redefining '\cites'.
 Package biblatex Info: Redefining '\parencites'.
 Package biblatex Info: Redefining '\smartcites'.
-))
+)
 Package biblatex Info: Trying to load configuration file...
 Package biblatex Info: ... file 'biblatex.cfg' found.
 
@@ -1375,18 +1373,6 @@ Package biblatex Info: ... file 'tesina.bbl' found.
 (./tesina.bbl
 
 Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'chiral-polyhedra-i':
-(biblatex)                - Invalid format of field 'date' 
-(biblatex)                - Invalid format of field 'date'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
-(biblatex)                with 'chiral-polyhedra-ii':
-(biblatex)                - Invalid format of field 'date' 
-(biblatex)                - Invalid format of field 'date'.
-
-
-Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                with 'rolis-cube':
 (biblatex)                - Invalid format of field 'date' 
 (biblatex)                - Invalid format of field 'date'.
@@ -1403,10 +1389,22 @@ Package biblatex Warning: BibTeX reported the following issues
 (biblatex)                - Invalid format of field 'date' 
 (biblatex)                - Invalid format of field 'date'.
 
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'chiral-polyhedra-i':
+(biblatex)                - Invalid format of field 'date' 
+(biblatex)                - Invalid format of field 'date'.
+
+
+Package biblatex Warning: BibTeX reported the following issues
+(biblatex)                with 'chiral-polyhedra-ii':
+(biblatex)                - Invalid format of field 'date' 
+(biblatex)                - Invalid format of field 'date'.
+
 )
 Package biblatex Info: Reference section=0 on input line 91.
 Package biblatex Info: Reference segment=0 on input line 91.
-<fig0.png, id=70, 344.28625pt x 357.335pt>
+<fig0.png, id=62, 344.28625pt x 357.335pt>
 File: fig0.png Graphic file (type png)
 <use fig0.png>
 Package pdftex.def Info: fig0.png  used on input line 95.
@@ -1438,14 +1436,15 @@ nta emoci[]on.
 
  [3
 
-] [4
-
 ]
 Overfull \hbox (6.77197pt too wide) in paragraph at lines 174--175
 []\OT1/ppl/m/n/10 Higher-dimensional poly-topes were first stud-ied in the XIX 
 cen-tury, when Lud-wig Schl[]afli
  []
 
+[4
+
+]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 (hyperref)                removing `math shift' on input line 184.
@@ -1461,319 +1460,151 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
 [5] [6] [7] [8]
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 306.
+(hyperref)                removing `math shift' on input line 309.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\left' on input line 306.
+(hyperref)                removing `\left' on input line 309.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 306.
+(hyperref)                removing `\begingroup' on input line 309.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\endgroup' on input line 306.
+(hyperref)                removing `\endgroup' on input line 309.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@over' on input line 306.
+(hyperref)                removing `\@@over' on input line 309.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\right' on input line 306.
+(hyperref)                removing `\right' on input line 309.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 306.
+(hyperref)                removing `math shift' on input line 309.
 
-<fig1a.png, id=204, 262.9825pt x 250.9375pt>
-File: fig1a.png Graphic file (type png)
-<use fig1a.png>
-Package pdftex.def Info: fig1a.png  used on input line 317.
-(pdftex.def)             Requested size: 154.66681pt x 147.58852pt.
-<fig1b.png, id=205, 337.26pt x 334.24875pt>
-File: fig1b.png Graphic file (type png)
-<use fig1b.png>
-Package pdftex.def Info: fig1b.png  used on input line 322.
-(pdftex.def)             Requested size: 154.66681pt x 153.28706pt.
-[9 <./fig1a.png (PNG copy)> <./fig1b.png (PNG copy)>]
-<fig2a.png, id=220, 346.29375pt x 329.23pt>
-File: fig2a.png Graphic file (type png)
-<use fig2a.png>
-Package pdftex.def Info: fig2a.png  used on input line 339.
-(pdftex.def)             Requested size: 154.66681pt x 147.04692pt.
-<fig2b.png, id=221, 364.36125pt x 366.36874pt>
-File: fig2b.png Graphic file (type png)
-<use fig2b.png>
-Package pdftex.def Info: fig2b.png  used on input line 344.
-(pdftex.def)             Requested size: 154.66681pt x 155.51738pt.
-<fig3a.png, id=225, 347.2975pt x 331.2375pt>
+<fig1.png, id=200, 355.3275pt x 363.3575pt>
+File: fig1.png Graphic file (type png)
+<use fig1.png>
+Package pdftex.def Info: fig1.png  used on input line 318.
+(pdftex.def)             Requested size: 270.66988pt x 276.79216pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[9] [10 <./fig1.png (PNG copy)>]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 340.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\left' on input line 340.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 340.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endgroup' on input line 340.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@@over' on input line 340.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\right' on input line 340.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 340.
+
+<fig2.png, id=226, 1532.72626pt x 1015.795pt>
+File: fig2.png Graphic file (type png)
+<use fig2.png>
+Package pdftex.def Info: fig2.png  used on input line 371.
+(pdftex.def)             Requested size: 386.67296pt x 256.25758pt.
+[11]
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 377.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\left' on input line 377.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\begingroup' on input line 377.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\endgroup' on input line 377.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\@@over' on input line 377.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `\right' on input line 377.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 377.
+
+<fig3a.png, id=237, 536.0025pt x 480.79625pt>
 File: fig3a.png Graphic file (type png)
 <use fig3a.png>
-Package pdftex.def Info: fig3a.png  used on input line 359.
-(pdftex.def)             Requested size: 154.66681pt x 147.51898pt.
-<fig3b.png, id=226, 361.35pt x 353.32pt>
+Package pdftex.def Info: fig3a.png  used on input line 390.
+(pdftex.def)             Requested size: 309.33954pt x 277.47543pt.
+<fig3b.png, id=238, 403.5075pt x 416.55624pt>
 File: fig3b.png Graphic file (type png)
 <use fig3b.png>
-Package pdftex.def Info: fig3b.png  used on input line 364.
-(pdftex.def)             Requested size: 154.66681pt x 151.22917pt.
- [10 <./fig2a.png (PNG copy)> <./fig2b.png (PNG copy)>]
-<fig4.png, id=236, 407.5225pt x 401.5pt>
-File: fig4.png Graphic file (type png)
-<use fig4.png>
-Package pdftex.def Info: fig4.png  used on input line 383.
-(pdftex.def)             Requested size: 135.33789pt x 133.33472pt.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 388.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\left' on input line 388.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 388.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\endgroup' on input line 388.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@over' on input line 388.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\right' on input line 388.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 388.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 388.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 388.
-
-[11 <./fig3a.png (PNG copy)> <./fig3b.png (PNG copy)> <./fig4.png (PNG copy)>]
-<fig5a.png, id=244, 335.2525pt x 361.35pt>
-File: fig5a.png Graphic file (type png)
-<use fig5a.png>
-Package pdftex.def Info: fig5a.png  used on input line 396.
-(pdftex.def)             Requested size: 170.52351pt x 183.79533pt.
-<fig5b.png, id=245, 364.36125pt x 333.245pt>
-File: fig5b.png Graphic file (type png)
-<use fig5b.png>
-Package pdftex.def Info: fig5b.png  used on input line 401.
-(pdftex.def)             Requested size: 170.52351pt x 155.95903pt.
-<fig6a.png, id=248, 489.83pt x 259.97125pt>
-File: fig6a.png Graphic file (type png)
-<use fig6a.png>
-Package pdftex.def Info: fig6a.png  used on input line 413.
-(pdftex.def)             Requested size: 278.40369pt x 147.7607pt.
-<fig6b.png, id=249, 532.99126pt x 519.9425pt>
-File: fig6b.png Graphic file (type png)
-<use fig6b.png>
-Package pdftex.def Info: fig6b.png  used on input line 425.
-(pdftex.def)             Requested size: 278.40369pt x 271.59344pt.
-
-[12 <./fig5a.png (PNG copy)> <./fig5b.png (PNG copy)> <./fig6a.png (PNG copy)>]
-<fig7.png, id=259, 288.07625pt x 308.15125pt>
-File: fig7.png Graphic file (type png)
-<use fig7.png>
-Package pdftex.def Info: fig7.png  used on input line 441.
-(pdftex.def)             Requested size: 116.00307pt x 124.08586pt.
-[13 <./fig6b.png (PNG copy)> <./fig7.png (PNG copy)>]
-<fig8a.png, id=267, 654.445pt x 162.6075pt>
-File: fig8a.png Graphic file (type png)
-<use fig8a.png>
-Package pdftex.def Info: fig8a.png  used on input line 453.
-(pdftex.def)             Requested size: 367.33812pt x 91.27048pt.
-<fig8b.png, id=268, 613.29124pt x 167.62625pt>
-File: fig8b.png Graphic file (type png)
-<use fig8b.png>
-Package pdftex.def Info: fig8b.png  used on input line 459.
-(pdftex.def)             Requested size: 367.33812pt x 100.40259pt.
-<fig8c.png, id=269, 629.35126pt x 184.69pt>
-File: fig8c.png Graphic file (type png)
-<use fig8c.png>
-Package pdftex.def Info: fig8c.png  used on input line 465.
-(pdftex.def)             Requested size: 367.33812pt x 107.79942pt.
-<fig8d.png, id=270, 526.96875pt x 122.4575pt>
-File: fig8d.png Graphic file (type png)
-<use fig8d.png>
-Package pdftex.def Info: fig8d.png  used on input line 471.
-(pdftex.def)             Requested size: 367.33812pt x 85.36649pt.
-<fig9a.png, id=273, 458.71375pt x 333.245pt>
-File: fig9a.png Graphic file (type png)
-<use fig9a.png>
-Package pdftex.def Info: fig9a.png  used on input line 484.
-(pdftex.def)             Requested size: 193.33647pt x 140.45517pt.
-<fig9b.png, id=274, 454.69875pt x 287.0725pt>
-File: fig9b.png Graphic file (type png)
-<use fig9b.png>
-Package pdftex.def Info: fig9b.png  used on input line 489.
-(pdftex.def)             Requested size: 348.0033pt x 219.71487pt.
- [14 <./fig8a.png (PNG copy)> <./fig8b.png (PNG copy)> <./fig8c.png (PNG copy)>
- <./fig8d.png (PNG copy)>] [15 <./fig9a.png (PNG copy)> <./fig9b.png (PNG copy)
->]
-<fig10a.png, id=288, 524.96124pt x 262.9825pt>
-File: fig10a.png Graphic file (type png)
-<use fig10a.png>
-Package pdftex.def Info: fig10a.png  used on input line 507.
-(pdftex.def)             Requested size: 309.33954pt x 154.96971pt.
-<fig10b.png, id=289, 414.54875pt x 231.86626pt>
-File: fig10b.png Graphic file (type png)
-<use fig10b.png>
-Package pdftex.def Info: fig10b.png  used on input line 512.
-(pdftex.def)             Requested size: 270.66988pt x 151.3941pt.
-<fig11a.png, id=295, 654.445pt x 519.9425pt>
-File: fig11a.png Graphic file (type png)
-<use fig11a.png>
-Package pdftex.def Info: fig11a.png  used on input line 531.
-(pdftex.def)             Requested size: 193.33647pt x 153.59592pt.
-<fig11b.png, id=296, 591.20876pt x 579.16376pt>
-File: fig11b.png Graphic file (type png)
-<use fig11b.png>
-Package pdftex.def Info: fig11b.png  used on input line 536.
-(pdftex.def)             Requested size: 270.66988pt x 265.16365pt.
- [16 <./fig10a.png (PNG copy)> <./fig10b.png (PNG copy)>]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 543.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\left' on input line 543.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 543.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\endgroup' on input line 543.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@over' on input line 543.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\right' on input line 543.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 543.
-
-[17 <./fig11a.png> <./fig11b.png (PNG copy)>]
-<fig12a.png, id=313, 1626.075pt x 1088.065pt>
-File: fig12a.png Graphic file (type png)
-<use fig12a.png>
-Package pdftex.def Info: fig12a.png  used on input line 573.
-(pdftex.def)             Requested size: 386.67296pt x 258.73357pt.
- [18]
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 586.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\left' on input line 586.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\begingroup' on input line 586.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\endgroup' on input line 586.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\@@over' on input line 586.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `\right' on input line 586.
-
-
-Package hyperref Warning: Token not allowed in a PDF string (Unicode):
-(hyperref)                removing `math shift' on input line 586.
-
-
-Overfull \hbox (1.57361pt too wide) in paragraph at lines 591--592
-\OT1/ppl/m/n/10 na-to-rial chi-ral-ity. Ev-ery step of the con-struc-tion was c
-on-firmed in \OT1/pcr/l/it/10 abstract-dual.txt
- []
-
-<fig13a.png, id=321, 497.86pt x 492.84125pt>
-File: fig13a.png Graphic file (type png)
-<use fig13a.png>
-Package pdftex.def Info: fig13a.png  used on input line 599.
-(pdftex.def)             Requested size: 270.66988pt x 267.94266pt.
-<fig12b.png, id=322, 403.5075pt x 416.55624pt>
-File: fig12b.png Graphic file (type png)
-<use fig12b.png>
-Package pdftex.def Info: fig12b.png  used on input line 604.
+Package pdftex.def Info: fig3b.png  used on input line 395.
 (pdftex.def)             Requested size: 193.33647pt x 199.58878pt.
-[19 <./fig12a.png>] [20 <./fig13a.png (PNG copy)> <./fig12b.png (PNG copy)>]
-[21
-
-] [22] [23]
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 8
-73.
- (/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-)
-LaTeX Font Info:    Trying to load font information for OMS+ppl on input line 8
-73.
-
-(/usr/local/texlive/2023/texmf-dist/tex/latex/psnfss/omsppl.fd
-File: omsppl.fd 
-)
-LaTeX Font Info:    Font shape `OMS/ppl/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 873.
-
-Overfull \hbox (11.53564pt too wide) in paragraph at lines 873--873
-[]\OT1/ppl/m/n/10 Bracho, J., Hubard, I. & Pel-licer, D. A Fi-nite Chi-ral 4-Po
-lytope in \TS1/ppl/m/n/10 $$\OMS/cmsy/m/n/10 f$n$\OT1/ppl/m/n/10 mathbb \OMS/cm
-sy/m/n/10 f\OT1/ppl/m/n/10 R\OMS/cmsy/m/n/10 gg\OT1/ppl/m/n/10 ^4\TS1/ppl/m/n/1
-0 $$\OT1/ppl/m/n/10 .
+[12 <./fig2.png>] [13 <./fig3a.png (PNG copy)> <./fig3b.png (PNG copy)>]
+Underfull \hbox (badness 2941) in paragraph at lines 407--408
+\OT1/ppl/m/n/10 The orig-i-nal code for the pro-grams used in this the-sis may 
+be con-sulted at
  []
 
-[24] (./tesina.aux)
+[14
+
+] [15] [16]
+Overfull \hbox (13.41031pt too wide) in paragraph at lines 668--668
+[]\OT1/ppl/m/n/10 Javier Bra-cho, Is-abel Hubard, and Daniel Pel-licer. ``Chi-r
+al Poly-he-dra in 3-Dimensional
+ []
+
+
+Overfull \hbox (3.41776pt too wide) in paragraph at lines 668--668
+\OT1/ppl/m/n/10 dra, Part II: Com-plete enu-mer-a-tion.'' In: \OT1/ppl/m/it/10 
+Ae-qua-tiones math-e-mat-i-cae \OT1/ppl/m/n/10 29 (1985), pp. 222{
+ []
+
+[17] [18] (./tesina.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
 Package rerunfilecheck Info: File `tesina.out' has not changed.
-(rerunfilecheck)             Checksum: 2CA5D64DC1F3AAB35B551F0676BF9E7A;2805.
-
-Package biblatex Warning: Please (re)run BibTeX on the file(s):
-(biblatex)                tesina
-(biblatex)                and rerun LaTeX afterwards.
-
+(rerunfilecheck)             Checksum: 7B47450F3BABA218D4671491B2A46C4E;2208.
 Package logreq Info: Writing requests to 'tesina.run.xml'.
 \openout1 = `tesina.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 36801 strings out of 476025
- 707673 string characters out of 5790018
- 2128388 words of memory out of 5000000
- 56427 multiletter control sequences out of 15000+600000
- 534592 words of font info for 101 fonts, out of 8000000 for 9000
+ 36437 strings out of 476025
+ 702365 string characters out of 5790018
+ 2213388 words of memory out of 5000000
+ 56098 multiletter control sequences out of 15000+600000
+ 530588 words of font info for 86 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,10n,89p,1876b,2323s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 84i,10n,89p,1876b,2285s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
 ></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.
 pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.p
@@ -1786,22 +1617,19 @@ local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/lo
 cal/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local
 /texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/te
 xlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texli
-ve/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
-2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/202
-3/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/tex
-mf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive/2023
-/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2023/texmf-d
-ist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2023/texmf-dist/font
-s/type1/urw/courier/ucrro8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1
-/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/pa
-latino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/urw/palatino/
-uplri8a.pfb>
-Output written on tesina.pdf (24 pages, 1563215 bytes).
+ve/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/
+2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/202
+3/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/local/texlive
+/2023/texmf-dist/fonts/type1/urw/courier/ucrb8a.pfb></usr/local/texlive/2023/te
+xmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2023/texmf-dist
+/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/
+type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/u
+rw/palatino/uplri8a.pfb>
+Output written on tesina.pdf (18 pages, 631010 bytes).
 PDF statistics:
- 727 PDF objects out of 1000 (max. 8388607)
- 617 compressed objects within 7 object streams
- 276 named destinations out of 1000 (max. 500000)
- 271 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 632 PDF objects out of 1000 (max. 8388607)
+ 557 compressed objects within 6 object streams
+ 257 named destinations out of 1000 (max. 500000)
+ 150 words of extra memory for PDF output out of 10000 (max. 10000000)
 

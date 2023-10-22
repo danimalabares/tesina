@@ -16,7 +16,58 @@
   {}
 \endgroup
 
-\datalist[entry]{none/global//global/global}
+\datalist[entry]{nty/global//global/global}
+  \entry{rolis-cube}{article}{}
+    \name{author}{3}{}{%
+      {{hash=BJ}{%
+         family={Bracho},
+         familyi={B\bibinitperiod},
+         given={Javier},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=HI}{%
+         family={Hubard},
+         familyi={H\bibinitperiod},
+         given={Isabel},
+         giveni={I\bibinitperiod},
+      }}%
+      {{hash=PD}{%
+         family={Pellicer},
+         familyi={P\bibinitperiod},
+         given={Daniel},
+         giveni={D\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{BJHIPD1}
+    \strng{fullhash}{BJHIPD1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
+    \field{abstract}{%
+    In this paper, we give an example of a chiral 4-polytope in projective
+  3-space. This example naturally yields a finite chiral 4-polytope in
+  euclidean 4-space, giving a counterexample to a theorem previously published
+  in the literature {$[$}Theorem 11.2 of McMullen (Discrete Comput Geom
+  32(1):1--35, 2004){$]$}.%
+    }
+    \verb{doi}
+    \verb 10.1007/s00454-014-9631-4
+    \endverb
+    \field{isbn}{1432-0444}
+    \field{number}{4}
+    \field{pages}{799\bibrangedash 805}
+    \field{title}{A Finite Chiral 4-Polytope in {$\mathbb{R}^4$}}
+    \verb{url}
+    \verb https://doi.org/10.1007/s00454-014-9631-4
+    \endverb
+    \field{volume}{52}
+    \field{journaltitle}{Discrete \& Computational Geometry}
+    \field{year}{2014}
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
+  \endentry
+
   \entry{petcox}{article}{}
     \name{author}{3}{}{%
       {{hash=BJ}{%
@@ -38,10 +89,12 @@
          giveni={D\bibinitperiod},
       }}%
     }
-    \strng{namehash}{BJ+1}
+    \strng{namehash}{BJHIPD1}
     \strng{fullhash}{BJHIPD1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{sortinit}{B}
+    \field{sortinithash}{B}
     \field{abstract}{%
     We study chiral polyhedra in 3-dimensional geometries (Euclidean,
   hyperbolic, and projective) in a unified manner. This extends to hyperbolic
@@ -66,6 +119,338 @@
     \field{year}{2021}
   \endentry
 
+  \entry{regular-skew}{article}{}
+    \name{author}{1}{}{%
+      {{hash=CHSM}{%
+         family={Coxeter},
+         familyi={C\bibinitperiod},
+         given={H.\bibnamedelima S.\bibnamedelima M.},
+         giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
+  M\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{CHSM1}
+    \strng{fullhash}{CHSM1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{C}
+    \field{sortinithash}{C}
+    \verb{doi}
+    \verb 10.1112/plms/s2-43.1.33
+    \endverb
+    \field{issn}{0024-6115}
+    \field{number}{1}
+    \field{pages}{33\bibrangedash 62}
+    \field{title}{{Regular Skew Polyhedra in Three and Four Dimension, and
+  their Topological Analogues}}
+    \verb{url}
+    \verb https://doi.org/10.1112/plms/s2-43.1.33
+    \endverb
+    \field{volume}{s2-43}
+    \field{journaltitle}{Proceedings of the London Mathematical Society}
+    \field{month}{01}
+    \field{year}{1938}
+  \endentry
+
+  \entry{Dress1981}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DAW}{%
+         family={Dress},
+         familyi={D\bibinitperiod},
+         given={Andreas\bibnamedelima W.M.},
+         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \keyw{regular polyhedra; regular polytopes; combinatorial polytopes}
+    \strng{namehash}{DAW1}
+    \strng{fullhash}{DAW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{pages}{252\bibrangedash 265}
+    \field{title}{A combinatorial theory of Grünbaum's new regular polyhedra,
+  Part I: Grünbaum's new regular polyhedra and their automorphism group.}
+    \field{volume}{23}
+    \field{journaltitle}{Aequationes mathematicae}
+    \field{year}{1981}
+  \endentry
+
+  \entry{Dress1985}{article}{}
+    \name{author}{1}{}{%
+      {{hash=DAW}{%
+         family={Dress},
+         familyi={D\bibinitperiod},
+         given={Andreas\bibnamedelima W.M.},
+         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
+      }}%
+    }
+    \keyw{Grünbaum’s new regular polyhedra; automorphism group; symmetry
+  group; isometry groups}
+    \strng{namehash}{DAW1}
+    \strng{fullhash}{DAW1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{D}
+    \field{sortinithash}{D}
+    \field{pages}{222\bibrangedash 243}
+    \field{title}{A combinatorial theory of Grünbaum's new regular polyhedra,
+  Part II: Complete enumeration.}
+    \field{volume}{29}
+    \field{journaltitle}{Aequationes mathematicae}
+    \field{year}{1985}
+  \endentry
+
+  \entry{grunbaum}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GB}{%
+         family={Gr{\"u}nbaum},
+         familyi={G\bibinitperiod},
+         given={Branko},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{GB1}
+    \strng{fullhash}{GB1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{abstract}{%
+    Although it is customary to define polygons as certain families of edges,
+  when considering polyhedra it is usual to view polygons as 2-dimensional
+  pieces of the plane. If this rather illogical point of view is replaced by
+  consistently understanding polygons as 1-dimensional complexes, the theory of
+  polyhedra becomes richer and more satisfactory. Even with the strictest
+  definition of regularity this approach leads to 17 individual regular
+  polyhedra in the Euclidean 3-space and 12 infinite families of such
+  polyhedra, besides the traditional ones (which consist of 5 Platonic
+  polyhedra, 4 Kepler---Poinsot polyhedra, 3 planar tessellations and 3
+  Petrie---Coxeter polyhedra). Among the many still open problems that
+  naturally arise from the new point of view, the most obvious one is the
+  question whether the regular polyhedra found in the paper are the only ones
+  possible in the Euclidean 3-space.%
+    }
+    \verb{doi}
+    \verb 10.1007/BF01836414
+    \endverb
+    \field{isbn}{1420-8903}
+    \field{number}{1}
+    \field{pages}{1\bibrangedash 20}
+    \field{title}{Regular polyhedra---old and new}
+    \verb{url}
+    \verb https://doi.org/10.1007/BF01836414
+    \endverb
+    \field{volume}{16}
+    \field{journaltitle}{Aequationes Mathematicae}
+    \field{year}{1977}
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
+  \endentry
+
+  \entry{grunbaum-regularity}{article}{}
+    \name{author}{1}{}{%
+      {{hash=GB}{%
+         family={Grünbaum},
+         familyi={G\bibinitperiod},
+         given={B.},
+         giveni={B\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Collques internationaux C. N. R. S.}%
+    }
+    \strng{namehash}{GB2}
+    \strng{fullhash}{GB2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{G}
+    \field{sortinithash}{G}
+    \field{number}{260}
+    \field{pages}{191–197}
+    \field{title}{Regularity of graphs, complexes and designs}
+    \field{journaltitle}{Problèmes combinatories et théorie des graphes}
+    \field{year}{1977}
+  \endentry
+
+  \entry{euclid}{book}{}
+    \name{author}{2}{}{%
+      {{hash=HJ}{%
+         family={Heiberg},
+         familyi={H\bibinitperiod},
+         given={J.L.},
+         giveni={J\bibinitperiod},
+      }}%
+      {{hash=FR}{%
+         family={Fitzpatrick},
+         familyi={F\bibinitperiod},
+         given={R.},
+         giveni={R\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Independently Published}%
+    }
+    \strng{namehash}{HJFR1}
+    \strng{fullhash}{HJFR1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{H}
+    \field{sortinithash}{H}
+    \field{isbn}{9798589564587}
+    \field{title}{Euclid's Elements of Geometry: Edited, and Provided with a
+  Modern English Translation, by Richard Fitzpatrick}
+    \field{year}{2008}
+  \endentry
+
+  \entry{mcmullen-combinatorially}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MP}{%
+         family={McMullen},
+         familyi={M\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {London Mathematical Society}%
+    }
+    \strng{namehash}{MP1}
+    \strng{fullhash}{MP1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \verb{doi}
+    \verb 10.1112/S0025579300003739
+    \endverb
+    \field{number}{2}
+    \field{pages}{142–150}
+    \field{title}{Combinatorially regular polytopes}
+    \field{volume}{14}
+    \field{journaltitle}{Mathematika}
+    \field{year}{1967}
+  \endentry
+
+  \entry{regular-ordinary}{article}{}
+    \name{author}{2}{}{%
+      {{hash=MP}{%
+         family={McMullen},
+         familyi={M\bibinitperiod},
+         given={P.},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Schulte},
+         familyi={S\bibinitperiod},
+         given={E.},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MPSE1}
+    \strng{fullhash}{MPSE1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    The three aims of this paper are to obtain the proof by Dress of the
+  completeness of the enumeration of the Gr{\"u}nbaum---Dress polyhedra (that
+  is, the regular apeirohedra, or apeirotopes of rank 3) in ordinary space E3in
+  a quicker and more perspicuous way, to give presentations of those of their
+  symmetry groups which are affinely irreducible, and to describe all the
+  discrete regular apeirotopes of rank 4 in E3. The paper gives a complete
+  classification of the discrete regular polytopes in ordinary space.%
+    }
+    \verb{doi}
+    \verb 10.1007/PL00009304
+    \endverb
+    \field{isbn}{1432-0444}
+    \field{number}{4}
+    \field{pages}{449\bibrangedash 478}
+    \field{title}{Regular Polytopes in Ordinary Space}
+    \verb{url}
+    \verb https://doi.org/10.1007/PL00009304
+    \endverb
+    \field{volume}{17}
+    \field{journaltitle}{Discrete \& Computational Geometry}
+    \field{year}{1997}
+    \warn{\item Invalid format of field 'date' \item Invalid format of field
+  'date'}
+  \endentry
+
+  \entry{mcmullen-4dimensional}{article}{}
+    \name{author}{1}{}{%
+      {{hash=MP}{%
+         family={McMullen},
+         familyi={M\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{MP2}
+    \strng{fullhash}{MP2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{abstract}{%
+    This paper completes the classification of the four-dimensional (finite)
+  regular polyhedra, of which those with planar faces were---in effect---found
+  by Arocha, Bracho and Montejano. However, the methods employed here are in
+  the same spirit as those used in the description of all three-dimensional
+  regular polytopes by this author and Schulte, and the regular polytopes of
+  full rank by this author. The procedure has two stages. First, the possible
+  dimension vectors (dim R0,dim R1,dim R2) of the mirrors R0,R1,R2 of the
+  generating reflexions of the symmetry groups are determined. Second, all
+  polyhedra with a given dimension vector are found. Most of the polyhedra are
+  related to four-dimensional Coxeter groups, although one class has to be
+  approached using quaternions.%
+    }
+    \field{number}{2}
+    \field{pages}{355\bibrangedash 387}
+    \field{title}{Four-Dimensional Regular Polyhedra}
+    \verb{url}
+    \verb https://doi.org/10.1007/s00454-007-1342-7
+    \endverb
+    \field{volume}{38}
+    \field{journaltitle}{Discrete \& Computational Geometry}
+    \field{year}{2007}
+  \endentry
+
+  \entry{abstract-polytopes}{book}{}
+    \name{author}{2}{}{%
+      {{hash=MP}{%
+         family={McMullen},
+         familyi={M\bibinitperiod},
+         given={Peter},
+         giveni={P\bibinitperiod},
+      }}%
+      {{hash=SE}{%
+         family={Schulte},
+         familyi={S\bibinitperiod},
+         given={Egon},
+         giveni={E\bibinitperiod},
+      }}%
+    }
+    \list{publisher}{1}{%
+      {Cambridge University Press}%
+    }
+    \strng{namehash}{MPSE2}
+    \strng{fullhash}{MPSE2}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{sortinit}{M}
+    \field{sortinithash}{M}
+    \field{booktitle}{Abstract Regular Polytopes}
+    \verb{doi}
+    \verb 10.1017/CBO9780511546686.003
+    \endverb
+    \field{series}{Encyclopedia of Mathematics and its Applications}
+    \field{title}{Regular Polytopes}
+    \field{year}{2002}
+  \endentry
+
   \entry{chiral-polyhedra-i}{article}{}
     \name{author}{1}{}{%
       {{hash=SE}{%
@@ -79,6 +464,8 @@
     \strng{fullhash}{SE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
     \field{abstract}{%
     Chiral polyhedra in ordinary euclidean space E3 are nearly regular
   polyhedra; theirgeometric symmetry groups have two orbits on the flags, such
@@ -122,6 +509,8 @@
     \strng{fullhash}{SE1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
     \field{abstract}{%
     A chiral polyhedron has a geometric symmetry group with two orbits on the
   flags, such that adjacent flags are in distinct orbits. Part I of the paper
@@ -150,341 +539,6 @@
   'date'}
   \endentry
 
-  \entry{rolis-cube}{article}{}
-    \name{author}{3}{}{%
-      {{hash=BJ}{%
-         family={Bracho},
-         familyi={B\bibinitperiod},
-         given={Javier},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=HI}{%
-         family={Hubard},
-         familyi={H\bibinitperiod},
-         given={Isabel},
-         giveni={I\bibinitperiod},
-      }}%
-      {{hash=PD}{%
-         family={Pellicer},
-         familyi={P\bibinitperiod},
-         given={Daniel},
-         giveni={D\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{BJ+1}
-    \strng{fullhash}{BJHIPD1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    In this paper, we give an example of a chiral 4-polytope in projective
-  3-space. This example naturally yields a finite chiral 4-polytope in
-  euclidean 4-space, giving a counterexample to a theorem previously published
-  in the literature {$[$}Theorem 11.2 of McMullen (Discrete Comput Geom
-  32(1):1--35, 2004){$]$}.%
-    }
-    \verb{doi}
-    \verb 10.1007/s00454-014-9631-4
-    \endverb
-    \field{isbn}{1432-0444}
-    \field{number}{4}
-    \field{pages}{799\bibrangedash 805}
-    \field{title}{A Finite Chiral 4-Polytope in
-  {\$}{\$}{\{}{$\backslash$}mathbb {\{}R{\}}{\}}\^{}4{\$}{\$}}
-    \verb{url}
-    \verb https://doi.org/10.1007/s00454-014-9631-4
-    \endverb
-    \field{volume}{52}
-    \field{journaltitle}{Discrete \& Computational Geometry}
-    \field{year}{2014}
-    \warn{\item Invalid format of field 'date' \item Invalid format of field
-  'date'}
-  \endentry
-
-  \entry{euclid}{book}{}
-    \name{author}{2}{}{%
-      {{hash=HJ}{%
-         family={Heiberg},
-         familyi={H\bibinitperiod},
-         given={J.L.},
-         giveni={J\bibinitperiod},
-      }}%
-      {{hash=FR}{%
-         family={Fitzpatrick},
-         familyi={F\bibinitperiod},
-         given={R.},
-         giveni={R\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Independently Published}%
-    }
-    \strng{namehash}{HJFR1}
-    \strng{fullhash}{HJFR1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{isbn}{9798589564587}
-    \field{title}{Euclid's Elements of Geometry: Edited, and Provided with a
-  Modern English Translation, by Richard Fitzpatrick}
-    \field{year}{2008}
-  \endentry
-
-  \entry{abstract-polytopes}{book}{}
-    \name{author}{2}{}{%
-      {{hash=MP}{%
-         family={McMullen},
-         familyi={M\bibinitperiod},
-         given={Peter},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=SE}{%
-         family={Schulte},
-         familyi={S\bibinitperiod},
-         given={Egon},
-         giveni={E\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Cambridge University Press}%
-    }
-    \strng{namehash}{MPSE2}
-    \strng{fullhash}{MPSE2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{booktitle}{Abstract Regular Polytopes}
-    \verb{doi}
-    \verb 10.1017/CBO9780511546686.003
-    \endverb
-    \field{series}{Encyclopedia of Mathematics and its Applications}
-    \field{title}{Regular Polytopes}
-    \field{year}{2002}
-  \endentry
-
-  \entry{regular-skew}{article}{}
-    \name{author}{1}{}{%
-      {{hash=CHSM}{%
-         family={Coxeter},
-         familyi={C\bibinitperiod},
-         given={H.\bibnamedelima S.\bibnamedelima M.},
-         giveni={H\bibinitperiod\bibinitdelim S\bibinitperiod\bibinitdelim
-  M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{CHSM1}
-    \strng{fullhash}{CHSM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1112/plms/s2-43.1.33
-    \endverb
-    \verb{eprint}
-    \verb https://academic.oup.com/plms/article-pdf/s2-43/1/33/4324022/s2-43-1-
-    \verb 33.pdf
-    \endverb
-    \field{issn}{0024-6115}
-    \field{number}{1}
-    \field{pages}{33\bibrangedash 62}
-    \field{title}{{Regular Skew Polyhedra in Three and Four Dimension, and
-  their Topological Analogues}}
-    \verb{url}
-    \verb https://doi.org/10.1112/plms/s2-43.1.33
-    \endverb
-    \field{volume}{s2-43}
-    \field{journaltitle}{Proceedings of the London Mathematical Society}
-    \field{month}{01}
-    \field{year}{1938}
-  \endentry
-
-  \entry{grunbaum}{article}{}
-    \name{author}{1}{}{%
-      {{hash=GB}{%
-         family={Gr{\"u}nbaum},
-         familyi={G\bibinitperiod},
-         given={Branko},
-         giveni={B\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{GB1}
-    \strng{fullhash}{GB1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    Although it is customary to define polygons as certain families of edges,
-  when considering polyhedra it is usual to view polygons as 2-dimensional
-  pieces of the plane. If this rather illogical point of view is replaced by
-  consistently understanding polygons as 1-dimensional complexes, the theory of
-  polyhedra becomes richer and more satisfactory. Even with the strictest
-  definition of regularity this approach leads to 17 individual regular
-  polyhedra in the Euclidean 3-space and 12 infinite families of such
-  polyhedra, besides the traditional ones (which consist of 5 Platonic
-  polyhedra, 4 Kepler---Poinsot polyhedra, 3 planar tessellations and 3
-  Petrie---Coxeter polyhedra). Among the many still open problems that
-  naturally arise from the new point of view, the most obvious one is the
-  question whether the regular polyhedra found in the paper are the only ones
-  possible in the Euclidean 3-space.%
-    }
-    \verb{doi}
-    \verb 10.1007/BF01836414
-    \endverb
-    \field{isbn}{1420-8903}
-    \field{number}{1}
-    \field{pages}{1\bibrangedash 20}
-    \field{title}{Regular polyhedra---old and new}
-    \verb{url}
-    \verb https://doi.org/10.1007/BF01836414
-    \endverb
-    \field{volume}{16}
-    \field{journaltitle}{aequationes mathematicae}
-    \field{year}{1977}
-    \warn{\item Invalid format of field 'date' \item Invalid format of field
-  'date'}
-  \endentry
-
-  \entry{regular-ordinary}{article}{}
-    \name{author}{2}{}{%
-      {{hash=MP}{%
-         family={McMullen},
-         familyi={M\bibinitperiod},
-         given={P.},
-         giveni={P\bibinitperiod},
-      }}%
-      {{hash=SE}{%
-         family={Schulte},
-         familyi={S\bibinitperiod},
-         given={E.},
-         giveni={E\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MPSE1}
-    \strng{fullhash}{MPSE1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    The three aims of this paper are to obtain the proof by Dress of the
-  completeness of the enumeration of the Gr{\"u}nbaum---Dress polyhedra (that
-  is, the regular apeirohedra, or apeirotopes of rank 3) in ordinary space E3in
-  a quicker and more perspicuous way, to give presentations of those of their
-  symmetry groups which are affinely irreducible, and to describe all the
-  discrete regular apeirotopes of rank 4 in E3. The paper gives a complete
-  classification of the discrete regular polytopes in ordinary space.%
-    }
-    \verb{doi}
-    \verb 10.1007/PL00009304
-    \endverb
-    \field{isbn}{1432-0444}
-    \field{number}{4}
-    \field{pages}{449\bibrangedash 478}
-    \field{title}{Regular Polytopes in Ordinary Space}
-    \verb{url}
-    \verb https://doi.org/10.1007/PL00009304
-    \endverb
-    \field{volume}{17}
-    \field{journaltitle}{Discrete \& Computational Geometry}
-    \field{year}{1997}
-    \warn{\item Invalid format of field 'date' \item Invalid format of field
-  'date'}
-  \endentry
-
-  \entry{Dress1981}{article}{}
-    \name{author}{1}{}{%
-      {{hash=DAW}{%
-         family={Dress},
-         familyi={D\bibinitperiod},
-         given={Andreas\bibnamedelima W.M.},
-         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-    }
-    \keyw{regular polyhedra; regular polytopes; combinatorial polytopes}
-    \strng{namehash}{DAW1}
-    \strng{fullhash}{DAW1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{pages}{252\bibrangedash 265}
-    \field{title}{A combinatorial theory of Grünbaum's new regular polyhedra,
-  Part I: Grünbaum's new regular polyhedra and their automorphism group.}
-    \verb{url}
-    \verb http://eudml.org/doc/136917
-    \endverb
-    \field{volume}{23}
-    \field{journaltitle}{Aequationes mathematicae}
-    \field{year}{1981}
-  \endentry
-
-  \entry{Dress1985}{article}{}
-    \name{author}{1}{}{%
-      {{hash=DAW}{%
-         family={Dress},
-         familyi={D\bibinitperiod},
-         given={Andreas\bibnamedelima W.M.},
-         giveni={A\bibinitperiod\bibinitdelim W\bibinitperiod},
-      }}%
-    }
-    \keyw{Grünbaum’s new regular polyhedra; automorphism group; symmetry
-  group; isometry groups}
-    \strng{namehash}{DAW1}
-    \strng{fullhash}{DAW1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{pages}{222\bibrangedash 243}
-    \field{title}{A combinatorial theory of Grünbaum's new regular polyhedra,
-  Part II: Complete enumeration.}
-    \verb{url}
-    \verb http://eudml.org/doc/137097
-    \endverb
-    \field{volume}{29}
-    \field{journaltitle}{Aequationes mathematicae}
-    \field{year}{1985}
-  \endentry
-
-  \entry{mcmullen-combinatorially}{article}{}
-    \name{author}{1}{}{%
-      {{hash=MP}{%
-         family={McMullen},
-         familyi={M\bibinitperiod},
-         given={P.},
-         giveni={P\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {London Mathematical Society}%
-    }
-    \strng{namehash}{MP1}
-    \strng{fullhash}{MP1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \verb{doi}
-    \verb 10.1112/S0025579300003739
-    \endverb
-    \field{number}{2}
-    \field{pages}{142–150}
-    \field{title}{Combinatorially regular polytopes}
-    \field{volume}{14}
-    \field{journaltitle}{Mathematika}
-    \field{year}{1967}
-  \endentry
-
-  \entry{grunbaum-regularity}{article}{}
-    \name{author}{1}{}{%
-      {{hash=GB}{%
-         family={Grünbaum},
-         familyi={G\bibinitperiod},
-         given={B.},
-         giveni={B\bibinitperiod},
-      }}%
-    }
-    \list{publisher}{1}{%
-      {Collques internationaux C. N. R. S.}%
-    }
-    \strng{namehash}{GB2}
-    \strng{fullhash}{GB2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{number}{260}
-    \field{pages}{191–197}
-    \field{title}{Regularity of graphs, complexes and designs}
-    \field{journaltitle}{Promlèmes combinatories et théorie des graphes}
-    \field{year}{1977}
-  \endentry
-
   \entry{schulte-chiral}{inproceedings}{}
     \name{author}{2}{}{%
       {{hash=SE}{%
@@ -504,49 +558,11 @@
     \strng{fullhash}{SEWAI1}
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
+    \field{sortinit}{S}
+    \field{sortinithash}{S}
     \field{booktitle}{Applied Geometry And Discrete Mathematics}
     \field{title}{Chiral Polytopes}
-    \verb{url}
-    \verb https://api.semanticscholar.org/CorpusID:44586512
-    \endverb
     \field{year}{1990}
-  \endentry
-
-  \entry{mcmullen-4dimensional}{article}{}
-    \name{author}{1}{}{%
-      {{hash=MP}{%
-         family={McMullen},
-         familyi={M\bibinitperiod},
-         given={Peter},
-         giveni={P\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MP2}
-    \strng{fullhash}{MP2}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{abstract}{%
-    This paper completes the classification of the four-dimensional (finite)
-  regular polyhedra, of which those with planar faces were---in effect---found
-  by Arocha, Bracho and Montejano. However, the methods employed here are in
-  the same spirit as those used in the description of all three-dimensional
-  regular polytopes by this author and Schulte, and the regular polytopes of
-  full rank by this author. The procedure has two stages. First, the possible
-  dimension vectors (dim R0,dim R1,dim R2) of the mirrors R0,R1,R2 of the
-  generating reflexions of the symmetry groups are determined. Second, all
-  polyhedra with a given dimension vector are found. Most of the polyhedra are
-  related to four-dimensional Coxeter groups, although one class has to be
-  approached using quaternions.%
-    }
-    \field{number}{2}
-    \field{pages}{355\bibrangedash 387}
-    \field{title}{Four-Dimensional Regular Polyhedra}
-    \verb{url}
-    \verb https://doi.org/10.1007/s00454-007-1342-7
-    \endverb
-    \field{volume}{38}
-    \field{journaltitle}{Discrete \& Computational Geometry}
-    \field{year}{2007}
   \endentry
 \enddatalist
 \endinput
